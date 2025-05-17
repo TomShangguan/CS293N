@@ -1,0 +1,45 @@
+Password Authentication Weakness
+Pre-compiled Username/Password Dictionaries
+Dictionary-based Attack Automation
+SSH Brute Force Patterns
+IP Address-based Attack Correlation
+Account Lockout Mechanisms
+Webcam and Biometric Authentication
+Honeypot-based Attack Observation
+Username/Password Pair Reuse
+Distributed Brute-force Attacks
+Slow-motion Brute-force Strategies
+Flow-based Network Traffic Features
+MQTT Protocol Vulnerability
+Deep Learning for Traffic Classification
+MobileNet-based CNN Detection Model
+Transfer Learning for Intrusion Detection
+Bi-flow and Uni-flow Feature Engineering
+Edge and Fog Computing for IDS
+Context-aware Detection Strategies
+Attack Dictionary Signature Matching
+Resource Constraints in IoT Devices
+False Positives and Detection Precision
+Adversarial Evasion Techniques
+Dynamic Device Configuration Adaptation
+IP Blocking and Alerting Response Mechanisms
+High Frequency of Failed Login Attempts
+SSH Port Targeting Behavior
+Use of Default or Weak Passwords (e.g., “123456”, “admin”)
+Reuse of Precompiled Username/Password Lists
+Session-Based Packet Aggregation for Flow Analysis
+TCP Flag Patterns in Failed SSH Connections
+Detection via Flow-Level Features (not full packet inspection)
+Port Scanning Patterns in Brute Force Attempts
+Source Port Behavior in BFA Traffic
+Duration and Byte-Count Anomalies in Brute Force Sessions
+Brute Force Activity on Non-Standard SSH Ports
+Packet Burst Patterns in Attack Windows
+Session Timing and Connection Persistence Heuristics
+Distribution of Attacks Across Multiple IPs (Distributed BFA)
+Attackers Targeting Professional Servers Over Workstations
+Nonlinear Relationship Between Packet Count and Payload Size
+Flow Repetition with Minor Variation in Credentials
+TCP SYN/ACK Exchange Completion in Failed Logins
+Feature Overfitting Risks When Using Port Numbers
+Categorical Port-Based Tree Splitting Leading to Over-Specialization

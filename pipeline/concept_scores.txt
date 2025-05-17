@@ -1,0 +1,131 @@
+--- State Concept Embedding Results ---
+
+State Description 1:
+  Concept Scores (S_cc):
+    - "IP Blocking and Alerting Response Mechanisms": 0.4394
+    - "High Frequency of Failed Login Attempts": 0.4371
+    - "Session-Based Packet Aggregation for Flow Analysis": 0.4506
+    - "TCP Flag Patterns in Failed SSH Connections": 0.5549
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions": 0.4547
+    - "Brute Force Activity on Non-Standard SSH Ports": 0.4389
+    - "Packet Burst Patterns in Attack Windows": 0.4648
+    - "Nonlinear Relationship Between Packet Count and Payload Size": 0.4669
+    - "TCP SYN/ACK Exchange Completion in Failed Logins": 0.6191
+    - "Feature Overfitting Risks When Using Port Numbers": 0.4459
+
+State Description 2:
+  Concept Scores (S_cc):
+    - "IP Address-based Attack Correlation": 0.4215
+    - "IP Blocking and Alerting Response Mechanisms": 0.4270
+    - "High Frequency of Failed Login Attempts": 0.4770
+    - "SSH Port Targeting Behavior": 0.4153
+    - "TCP Flag Patterns in Failed SSH Connections": 0.5340
+    - "Port Scanning Patterns in Brute Force Attempts": 0.4299
+    - "Brute Force Activity on Non-Standard SSH Ports": 0.4532
+    - "Packet Burst Patterns in Attack Windows": 0.4199
+    - "Nonlinear Relationship Between Packet Count and Payload Size": 0.4239
+    - "TCP SYN/ACK Exchange Completion in Failed Logins": 0.6051
+
+State Description 3:
+  Concept Scores (S_cc):
+    - "IP Address-based Attack Correlation": 0.4589
+    - "Flow-based Network Traffic Features": 0.4581
+    - "IP Blocking and Alerting Response Mechanisms": 0.4734
+    - "High Frequency of Failed Login Attempts": 0.4480
+    - "Session-Based Packet Aggregation for Flow Analysis": 0.4648
+    - "TCP Flag Patterns in Failed SSH Connections": 0.5121
+    - "Detection via Flow-Level Features (not full packet inspection)": 0.4706
+    - "Brute Force Activity on Non-Standard SSH Ports": 0.4529
+    - "Nonlinear Relationship Between Packet Count and Payload Size": 0.4453
+    - "TCP SYN/ACK Exchange Completion in Failed Logins": 0.5656
+
+State Description 4:
+  Concept Scores (S_cc):
+    - "MQTT Protocol Vulnerability": 0.4115
+    - "High Frequency of Failed Login Attempts": 0.4495
+    - "Session-Based Packet Aggregation for Flow Analysis": 0.4033
+    - "TCP Flag Patterns in Failed SSH Connections": 0.5176
+    - "Port Scanning Patterns in Brute Force Attempts": 0.4032
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions": 0.4338
+    - "Brute Force Activity on Non-Standard SSH Ports": 0.4268
+    - "Packet Burst Patterns in Attack Windows": 0.4246
+    - "Nonlinear Relationship Between Packet Count and Payload Size": 0.4155
+    - "TCP SYN/ACK Exchange Completion in Failed Logins": 0.5927
+
+State Description 5:
+  Concept Scores (S_cc):
+    - "SSH Port Targeting Behavior": 0.4446
+    - "Session-Based Packet Aggregation for Flow Analysis": 0.4366
+    - "TCP Flag Patterns in Failed SSH Connections": 0.5128
+    - "Source Port Behavior in BFA Traffic": 0.4212
+    - "Brute Force Activity on Non-Standard SSH Ports": 0.4149
+    - "Packet Burst Patterns in Attack Windows": 0.4748
+    - "Session Timing and Connection Persistence Heuristics": 0.4367
+    - "Nonlinear Relationship Between Packet Count and Payload Size": 0.4401
+    - "TCP SYN/ACK Exchange Completion in Failed Logins": 0.5379
+    - "Feature Overfitting Risks When Using Port Numbers": 0.4235
+
+State Description 6:
+  Concept Scores (S_cc):
+    - "IP Blocking and Alerting Response Mechanisms": 0.4398
+    - "High Frequency of Failed Login Attempts": 0.4342
+    - "Session-Based Packet Aggregation for Flow Analysis": 0.4343
+    - "TCP Flag Patterns in Failed SSH Connections": 0.5515
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions": 0.4442
+    - "Brute Force Activity on Non-Standard SSH Ports": 0.4424
+    - "Packet Burst Patterns in Attack Windows": 0.4550
+    - "Nonlinear Relationship Between Packet Count and Payload Size": 0.4596
+    - "TCP SYN/ACK Exchange Completion in Failed Logins": 0.6177
+    - "Feature Overfitting Risks When Using Port Numbers": 0.4471
+
+State Description 7:
+  Concept Scores (S_cc):
+    - "IP Address-based Attack Correlation": 0.4195
+    - "Flow-based Network Traffic Features": 0.4212
+    - "IP Blocking and Alerting Response Mechanisms": 0.4321
+    - "High Frequency of Failed Login Attempts": 0.4826
+    - "Session-Based Packet Aggregation for Flow Analysis": 0.4306
+    - "TCP Flag Patterns in Failed SSH Connections": 0.5132
+    - "Detection via Flow-Level Features (not full packet inspection)": 0.4374
+    - "Port Scanning Patterns in Brute Force Attempts": 0.4084
+    - "Brute Force Activity on Non-Standard SSH Ports": 0.4273
+    - "TCP SYN/ACK Exchange Completion in Failed Logins": 0.5956
+
+State Description 8:
+  Concept Scores (S_cc):
+    - "Flow-based Network Traffic Features": 0.4458
+    - "IP Blocking and Alerting Response Mechanisms": 0.4391
+    - "SSH Port Targeting Behavior": 0.4182
+    - "Session-Based Packet Aggregation for Flow Analysis": 0.4546
+    - "TCP Flag Patterns in Failed SSH Connections": 0.5184
+    - "Detection via Flow-Level Features (not full packet inspection)": 0.4461
+    - "Packet Burst Patterns in Attack Windows": 0.4111
+    - "Session Timing and Connection Persistence Heuristics": 0.4640
+    - "Nonlinear Relationship Between Packet Count and Payload Size": 0.4271
+    - "TCP SYN/ACK Exchange Completion in Failed Logins": 0.5343
+
+State Description 9:
+  Concept Scores (S_cc):
+    - "IP Blocking and Alerting Response Mechanisms": 0.4017
+    - "High Frequency of Failed Login Attempts": 0.4154
+    - "Session-Based Packet Aggregation for Flow Analysis": 0.4119
+    - "TCP Flag Patterns in Failed SSH Connections": 0.5206
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions": 0.4201
+    - "Brute Force Activity on Non-Standard SSH Ports": 0.4059
+    - "Packet Burst Patterns in Attack Windows": 0.4049
+    - "Session Timing and Connection Persistence Heuristics": 0.4026
+    - "Nonlinear Relationship Between Packet Count and Payload Size": 0.4195
+    - "TCP SYN/ACK Exchange Completion in Failed Logins": 0.6171
+
+State Description 10:
+  Concept Scores (S_cc):
+    - "IP Blocking and Alerting Response Mechanisms": 0.4221
+    - "Session-Based Packet Aggregation for Flow Analysis": 0.4173
+    - "TCP Flag Patterns in Failed SSH Connections": 0.5155
+    - "Detection via Flow-Level Features (not full packet inspection)": 0.4098
+    - "Brute Force Activity on Non-Standard SSH Ports": 0.4163
+    - "Packet Burst Patterns in Attack Windows": 0.4270
+    - "Session Timing and Connection Persistence Heuristics": 0.4173
+    - "Nonlinear Relationship Between Packet Count and Payload Size": 0.4276
+    - "TCP SYN/ACK Exchange Completion in Failed Logins": 0.5678
+    - "Feature Overfitting Risks When Using Port Numbers": 0.4164

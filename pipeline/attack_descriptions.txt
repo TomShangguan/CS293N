@@ -1,0 +1,40 @@
+File: packet_patator-multi-cloud-attack-57497_attack.txt
+Label: Attack
+Description: This network state captures a failed HTTP request from 169.231.183.238 (port 50348) to 10.0.0.4 (port 26611). The initial packets (1-3) establish a TCP connection using a three-way handshake (SYN, SYN-ACK, ACK). Packet 4 contains an HTTP GET request for `/api/v1/nodes` to  `20.124.208.229:26611` with basic authentication. Packet 5 acknowledges receipt of data. Packets 6 and 7 contain a 401 Unauthorized HTTP response including a JSON payload indicating "Incorrect username or token". Finally, packets 8 and 9 show the connection being reset (RST flag) after the authentication failure. The initial Round Trip Time (RTT) is approximately 89ms. The client is using TCP window scaling and timestamps.
+==================================================
+File: packet_patator-multi-cloud-attack-109371_attack.txt
+Label: Attack
+Description: The network state captures a failed TCP handshake and subsequent connection reset between host `169.231.88.215` (src) and `10.0.0.4` (dst) on ports `57704` and `26611` respectively. The initial SYN packet (packet 1) from `169.231.88.215` is followed by a suspected retransmission (packet 2). `10.0.0.4` responds with a SYN-ACK (packet 3). Subsequent data packets (packets 5, 7, and 8) from `169.231.88.215` contain an HTTP GET request to `/api/v1/nodes` which is met with a 401 Unauthorized error due to incorrect credentials. Finally, `169.231.88.215` sends a RST packet (packets 9 and 10) to terminate the connection.
+==================================================
+File: packet_patator-multi-cloud-attack-78806_attack.txt
+Label: Attack
+Description: This network state captures a failed HTTP request to `http://20.124.208.229:26611/api/v1/nodes` requiring authentication. A TCP connection is established between `169.231.18.88:56092` (source) and `10.0.0.4:26611` (destination). Packet #4 contains the HTTP GET request with "Authorization: Basic Y2FzdGxlOmNhc3RsZQ==". Packets #6 and #7 contain the 401 Unauthorized response with a JSON payload `{"detail":"Incorrect username or token"}`. The connection is then reset by the source (`169.231.18.88`) in packets #8 and #9. Initial RTT is approximately 89ms. Window scaling is used.
+==================================================
+File: packet_patator-multi-cloud-attack-3752_attack.txt
+Label: Attack
+Description: The provided packet capture shows a failed HTTP request. The client (169.231.85.210) initiates a TCP connection to a server (10.0.0.4) on port 26611, making a GET request to `/api/v1/nodes` with basic authentication. The server responds with an HTTP 401 Unauthorized error, indicating incorrect credentials. The server sends the error as a JSON response: `{"detail":"Incorrect username or token"}`. The TCP connection is then abruptly reset by the client, as evidenced by the RST flag in packets 8 and 9. The initial RTT is approximately 88.9 milliseconds.
+==================================================
+File: packet_patator-multi-cloud-attack-126476_attack.txt
+Label: Attack
+Description: The network state captures a brief TCP handshake and HTTP GET request/response exchange between a client (10.0.0.4) and a server (168.63.129.16) over port 32526.  The client requests `/vmSettings`. The server initially returns a 304 Not Modified, then initiates a FIN handshake to close the connection, followed by the client ACKing the FIN.  Both hosts are using TCP timestamps and window scaling.  The client is a WALinuxAgent.
+==================================================
+File: packet_patator-multi-cloud-attack-94399_attack.txt
+Label: Attack
+Description: The network state captures a failed HTTP request attempt to `http://20.124.208.229:26611/api/v1/nodes`. A TCP connection is established between `169.231.183.238:51758` and `10.0.0.4:26611`. The client (`169.231.183.238`) sends a GET request with basic authentication but receives a 401 Unauthorized response from the server (`10.0.0.4`) indicating "Incorrect username or token."  Shortly after, the connection is reset by `169.231.183.238`. The initial TCP handshake uses window scaling and timestamps, and the initial RTT is around 88ms.
+==================================================
+File: packet_patator-multi-cloud-attack-37173_attack.txt
+Label: Attack
+Description: The network state captures a failed HTTP request due to an authentication error, followed by a TCP connection reset.
+==================================================
+File: packet_patator-multi-cloud-attack-92898_attack.txt
+Label: Attack
+Description: This network state captures a TCP handshake and subsequent HTTP request/response exchange followed by a graceful connection termination.  Specifically:
+==================================================
+File: packet_patator-multi-cloud-attack-14472_attack.txt
+Label: Attack
+Description: The network state captures a failed HTTP request to a server at `20.124.208.229:26611` using a TCP connection between `169.231.18.88:56142` and `10.0.0.4:26611`. The client attempts to retrieve `/api/v1/nodes` with basic authentication ("sweet16:sweet16"). The server responds with a 401 Unauthorized error, indicating an incorrect username or token.  The connection is then immediately reset by the client (`169.231.18.88`) after the server sends the 401 response. The packets demonstrate the TCP handshake (SYN, SYN-ACK, ACK) and the subsequent data exchange before the reset.  Timestamps and TCP options like window scaling and timestamps are present. The initial RTT is measured around 0.093 seconds.
+==================================================
+File: packet_patator-multi-cloud-attack-98709_attack.txt
+Label: Attack
+Description: This network state captures a short TCP connection attempting to retrieve data from an HTTP API.  The initial handshake (SYN, SYN-ACK, ACK) establishes the connection between 169.231.88.215:37858 (client) and 10.0.0.4:26611 (server).  The client sends a GET request to `/api/v1/nodes` including basic authentication. The server responds with a 401 Unauthorized error, indicating an issue with the provided credentials (incorrect username or token).  Following the unauthorized response, a FIN handshake is initiated by both sides to gracefully close the connection. The connection exhibits TCP window scaling, timestamp options, and selective acknowledgement capabilities.
+==================================================

@@ -1,0 +1,1996 @@
+
+========== Packet #1 ==========
+Arrival Time: 2023-07-14 08:44:35.846286
+
+-- ETH Layer --
+type: 0x0800
+dst: 00:0d:3a:56:47:c7
+stream: 0
+dst_tree: Layer DST
+:	lg: 0
+	oui_resolved: Microsoft Corp.
+	oui: 3386
+	ig: 0
+	dst_resolved: 00:0d:3a:56:47:c7
+	addr: 00:0d:3a:56:47:c7
+	addr_resolved: 00:0d:3a:56:47:c7
+	eth.dst_resolved: 00:0d:3a:56:47:c7
+
+src: 12:34:56:78:9a:bc
+src_tree: Layer SRC
+:	lg: 1
+	oui: 1193046
+	ig: 0
+	eth.src_resolved: 12:34:56:78:9a:bc
+	src_resolved: 12:34:56:78:9a:bc
+	addr: 12:34:56:78:9a:bc
+	addr_resolved: 12:34:56:78:9a:bc
+
+
+-- IP Layer --
+dst_host: 10.0.0.4
+status: 2
+frag_offset: 0
+flags_tree: Layer FLAGS
+:	df: 1
+	rb: 0
+	mf: 0
+
+version: 4
+dsfield: 0x00
+id: 0xf0c9
+hdr_len: 20
+src: 52.81.47.1
+flags: 0x02
+checksum.status: 2
+dst: 10.0.0.4
+dsfield_tree: Layer DSFIELD
+:	dscp: 0
+	ecn: 0
+
+addr: ['52.81.47.1', '10.0.0.4']
+len: 60
+host: ['52.81.47.1', '10.0.0.4']
+ttl: 31
+proto: 6
+src_host: 52.81.47.1
+checksum: 0xfd9c
+stream: 0
+
+-- TCP Layer --
+options: 02:04:05:b4:04:02:08:0a:9e:2b:b1:24:00:00:00:00:01:03:03:07
+urgent_pointer: 0
+completeness: 0
+dstport: 5432
+pnum: 1
+nxtseq: 1
+ack: 0
+status: 2
+completeness_tree: Layer COMPLETENESS
+:	syn: 0
+	fin: 0
+	data: 0
+	ack: 0
+	syn-ack: 0
+	str: [ Null ]
+	rst: 0
+
+seq: 0
+options_tree: Layer OPTIONS
+:	wscale: 03:03:07
+	mss:
+		option_kind: 2
+		mss_val: 1460
+		tcp.options.mss_val: 1460
+		option_len: 4
+	timestamp: 08:0a:9e:2b:b1:24:00:00:00:00
+	sack_perm:
+		option_kind: 4
+		option_len: 2
+	wscale:
+		option_kind: 3
+		shift: 7
+		multiplier: 128
+		option_len: 3
+	nop:
+		option_kind: 1
+	nop: 01
+	timestamp:
+		tsval: 2653663524
+		tsecr: 0
+		option_kind: 8
+		option_len: 10
+	sack_perm: 04:02
+	mss: 02:04:05:b4
+
+srcport: 59300
+flags_tree: Layer FLAGS
+:	syn: 1
+	ece: 0
+	fin: 0
+	ack: 0
+	reset: 0
+	syn:
+		expert:
+			syn: 
+			group: 33554432
+			severity: 2097152
+			message: Connection establish request (SYN): server port 5432
+	res: 0
+	cwr: 0
+	urg: 0
+	str: ··········S·
+	push: 0
+	ae: 0
+
+window_size: 64240
+hdr_len: 40
+ack_raw: 0
+flags: 0x0002
+checksum.status: 2
+seq_raw: 2262281694
+stream.pnum: 1
+window_size_value: 64240
+len: 0
+port: ['59300', '5432']
+checksum: 0x5ed6
+stream: 0
+========================================
+
+========== Packet #2 ==========
+Arrival Time: 2023-07-14 08:44:35.846334
+
+-- ETH Layer --
+type: 0x0800
+dst: 12:34:56:78:9a:bc
+stream: 0
+dst_tree: Layer DST
+:	lg: 1
+	oui: 1193046
+	ig: 0
+	dst_resolved: 12:34:56:78:9a:bc
+	addr: 12:34:56:78:9a:bc
+	addr_resolved: 12:34:56:78:9a:bc
+	eth.dst_resolved: 12:34:56:78:9a:bc
+
+src: 00:0d:3a:56:47:c7
+src_tree: Layer SRC
+:	lg: 0
+	oui_resolved: Microsoft Corp.
+	oui: 3386
+	ig: 0
+	eth.src_resolved: 00:0d:3a:56:47:c7
+	src_resolved: 00:0d:3a:56:47:c7
+	addr: 00:0d:3a:56:47:c7
+	addr_resolved: 00:0d:3a:56:47:c7
+
+
+-- IP Layer --
+dst_host: 52.81.47.1
+status: 2
+frag_offset: 0
+flags_tree: Layer FLAGS
+:	df: 1
+	rb: 0
+	mf: 0
+
+version: 4
+dsfield: 0x00
+id: 0x0000
+hdr_len: 20
+src: 10.0.0.4
+flags: 0x02
+checksum.status: 2
+dst: 52.81.47.1
+dsfield_tree: Layer DSFIELD
+:	dscp: 0
+	ecn: 0
+
+addr: ['10.0.0.4', '52.81.47.1']
+len: 60
+host: ['10.0.0.4', '52.81.47.1']
+ttl: 63
+proto: 6
+src_host: 10.0.0.4
+checksum: 0xce66
+stream: 0
+
+-- TCP Layer --
+options: 02:04:05:b4:04:02:08:0a:76:17:17:45:9e:2b:b1:24:01:03:03:07
+urgent_pointer: 0
+completeness: 1
+dstport: 59300
+pnum: 2
+nxtseq: 1
+ack: 1
+status: 2
+completeness_tree: Layer COMPLETENESS
+:	syn: 1
+	fin: 0
+	data: 0
+	ack: 0
+	syn-ack: 0
+	str: ·····S
+	rst: 0
+
+analysis: Layer ANALYSIS
+:	ack_rtt: 0.000048000
+	acks_frame: 1
+
+seq: 0
+options_tree: Layer OPTIONS
+:	wscale: 03:03:07
+	mss:
+		option_kind: 2
+		mss_val: 1460
+		tcp.options.mss_val: 1460
+		option_len: 4
+	timestamp: 08:0a:76:17:17:45:9e:2b:b1:24
+	sack_perm:
+		option_kind: 4
+		option_len: 2
+	wscale:
+		option_kind: 3
+		shift: 7
+		multiplier: 128
+		option_len: 3
+	nop:
+		option_kind: 1
+	nop: 01
+	timestamp:
+		tsval: 1981224773
+		tsecr: 2653663524
+		option_kind: 8
+		option_len: 10
+	sack_perm: 04:02
+	mss: 02:04:05:b4
+
+srcport: 5432
+flags_tree: Layer FLAGS
+:	syn: 1
+	ece: 0
+	fin: 0
+	ack: 1
+	reset: 0
+	syn:
+		expert:
+			synack: 
+			group: 33554432
+			severity: 2097152
+			message: Connection establish acknowledge (SYN+ACK): server port 5432
+	res: 0
+	cwr: 0
+	urg: 0
+	str: ·······A··S·
+	push: 0
+	ae: 0
+
+window_size: 65160
+hdr_len: 40
+ack_raw: 2262281695
+flags: 0x0012
+checksum.status: 2
+seq_raw: 2959992957
+stream.pnum: 2
+window_size_value: 65160
+len: 0
+port: ['5432', '59300']
+checksum: 0x6d84
+stream: 0
+========================================
+
+========== Packet #3 ==========
+Arrival Time: 2023-07-14 08:44:36.064364
+
+-- ETH Layer --
+type: 0x0800
+dst: 00:0d:3a:56:47:c7
+stream: 0
+dst_tree: Layer DST
+:	lg: 0
+	oui_resolved: Microsoft Corp.
+	oui: 3386
+	ig: 0
+	dst_resolved: 00:0d:3a:56:47:c7
+	addr: 00:0d:3a:56:47:c7
+	addr_resolved: 00:0d:3a:56:47:c7
+	eth.dst_resolved: 00:0d:3a:56:47:c7
+
+src: 12:34:56:78:9a:bc
+src_tree: Layer SRC
+:	lg: 1
+	oui: 1193046
+	ig: 0
+	eth.src_resolved: 12:34:56:78:9a:bc
+	src_resolved: 12:34:56:78:9a:bc
+	addr: 12:34:56:78:9a:bc
+	addr_resolved: 12:34:56:78:9a:bc
+
+
+-- IP Layer --
+dst_host: 10.0.0.4
+status: 2
+frag_offset: 0
+flags_tree: Layer FLAGS
+:	df: 1
+	rb: 0
+	mf: 0
+
+version: 4
+dsfield: 0x00
+id: 0xf0ca
+hdr_len: 20
+src: 52.81.47.1
+flags: 0x02
+checksum.status: 2
+dst: 10.0.0.4
+dsfield_tree: Layer DSFIELD
+:	dscp: 0
+	ecn: 0
+
+addr: ['52.81.47.1', '10.0.0.4']
+len: 52
+host: ['52.81.47.1', '10.0.0.4']
+ttl: 31
+proto: 6
+src_host: 52.81.47.1
+checksum: 0xfda3
+stream: 0
+
+-- TCP Layer --
+options: 01:01:08:0a:9e:2b:b1:ff:76:17:17:45
+urgent_pointer: 0
+completeness: 3
+dstport: 5432
+pnum: 3
+nxtseq: 1
+ack: 1
+status: 2
+completeness_tree: Layer COMPLETENESS
+:	syn: 1
+	fin: 0
+	data: 0
+	ack: 0
+	syn-ack: 1
+	str: ····SS
+	rst: 0
+
+analysis: Layer ANALYSIS
+:	initial_rtt: 0.218078000
+	ack_rtt: 0.218030000
+	acks_frame: 2
+
+seq: 1
+options_tree: Layer OPTIONS
+:	nop: 01
+	nop: 01
+	timestamp: 08:0a:9e:2b:b1:ff:76:17:17:45
+	timestamp:
+		tsval: 2653663743
+		tsecr: 1981224773
+		option_kind: 8
+		option_len: 10
+	nop:
+		option_kind: 1
+	nop:
+		option_kind: 1
+
+window_size_scalefactor: 128
+srcport: 59300
+flags_tree: Layer FLAGS
+:	syn: 0
+	ece: 0
+	fin: 0
+	ack: 1
+	reset: 0
+	res: 0
+	cwr: 0
+	urg: 0
+	str: ·······A····
+	push: 0
+	ae: 0
+
+window_size: 64256
+hdr_len: 32
+ack_raw: 2959992958
+flags: 0x0010
+checksum.status: 2
+seq_raw: 2262281695
+stream.pnum: 3
+window_size_value: 502
+len: 0
+port: ['59300', '5432']
+checksum: 0x5f69
+stream: 0
+========================================
+
+========== Packet #4 ==========
+Arrival Time: 2023-07-14 08:44:36.064364
+
+-- ETH Layer --
+type: 0x0800
+dst: 00:0d:3a:56:47:c7
+stream: 0
+dst_tree: Layer DST
+:	lg: 0
+	oui_resolved: Microsoft Corp.
+	oui: 3386
+	ig: 0
+	dst_resolved: 00:0d:3a:56:47:c7
+	addr: 00:0d:3a:56:47:c7
+	addr_resolved: 00:0d:3a:56:47:c7
+	eth.dst_resolved: 00:0d:3a:56:47:c7
+
+src: 12:34:56:78:9a:bc
+src_tree: Layer SRC
+:	lg: 1
+	oui: 1193046
+	ig: 0
+	eth.src_resolved: 12:34:56:78:9a:bc
+	src_resolved: 12:34:56:78:9a:bc
+	addr: 12:34:56:78:9a:bc
+	addr_resolved: 12:34:56:78:9a:bc
+
+
+-- IP Layer --
+dst_host: 10.0.0.4
+status: 2
+frag_offset: 0
+flags_tree: Layer FLAGS
+:	df: 1
+	rb: 0
+	mf: 0
+
+version: 4
+dsfield: 0x00
+id: 0xf0cb
+hdr_len: 20
+src: 52.81.47.1
+flags: 0x02
+checksum.status: 2
+dst: 10.0.0.4
+dsfield_tree: Layer DSFIELD
+:	dscp: 0
+	ecn: 0
+
+addr: ['52.81.47.1', '10.0.0.4']
+len: 93
+host: ['52.81.47.1', '10.0.0.4']
+ttl: 31
+proto: 6
+src_host: 52.81.47.1
+checksum: 0xfd79
+stream: 0
+
+-- TCP Layer --
+options: 01:01:08:0a:9e:2b:b1:ff:76:17:17:45
+urgent_pointer: 0
+completeness: 7
+dstport: 5432
+pnum: 4
+nxtseq: 42
+ack: 1
+status: 2
+completeness_tree: Layer COMPLETENESS
+:	syn: 1
+	fin: 0
+	data: 0
+	ack: 1
+	syn-ack: 1
+	str: ···ASS
+	rst: 0
+
+analysis: Layer ANALYSIS
+:	initial_rtt: 0.218078000
+	bytes_in_flight: 41
+	push_bytes_sent: 41
+
+size: 41
+seq: 1
+options_tree: Layer OPTIONS
+:	nop: 01
+	nop: 01
+	timestamp: 08:0a:9e:2b:b1:ff:76:17:17:45
+	timestamp:
+		tsval: 2653663743
+		tsecr: 1981224773
+		option_kind: 8
+		option_len: 10
+	nop:
+		option_kind: 1
+	nop:
+		option_kind: 1
+
+window_size_scalefactor: 128
+srcport: 59300
+flags_tree: Layer FLAGS
+:	syn: 0
+	ece: 0
+	fin: 0
+	ack: 1
+	reset: 0
+	res: 0
+	cwr: 0
+	urg: 0
+	str: ·······AP···
+	push: 1
+	ae: 0
+
+window_size: 64256
+hdr_len: 32
+ack_raw: 2959992958
+flags: 0x0018
+checksum.status: 2
+seq_raw: 2262281695
+stream.pnum: 4
+window_size_value: 502
+len: 41
+port: ['59300', '5432']
+pdu.size: 41
+checksum: 0x423b
+stream: 0
+
+-- PGSQL Layer --
+frontend: 1
+type: Startup message
+parameter_value: ['postgres', 'postgres']
+parameter_name: ['user', 'database']
+version_major: 3
+version_minor: 0
+length: 41
+========================================
+
+========== Packet #5 ==========
+Arrival Time: 2023-07-14 08:44:36.064475
+
+-- ETH Layer --
+type: 0x0800
+dst: 12:34:56:78:9a:bc
+stream: 0
+dst_tree: Layer DST
+:	lg: 1
+	oui: 1193046
+	ig: 0
+	dst_resolved: 12:34:56:78:9a:bc
+	addr: 12:34:56:78:9a:bc
+	addr_resolved: 12:34:56:78:9a:bc
+	eth.dst_resolved: 12:34:56:78:9a:bc
+
+src: 00:0d:3a:56:47:c7
+src_tree: Layer SRC
+:	lg: 0
+	oui_resolved: Microsoft Corp.
+	oui: 3386
+	ig: 0
+	eth.src_resolved: 00:0d:3a:56:47:c7
+	src_resolved: 00:0d:3a:56:47:c7
+	addr: 00:0d:3a:56:47:c7
+	addr_resolved: 00:0d:3a:56:47:c7
+
+
+-- IP Layer --
+dst_host: 52.81.47.1
+status: 2
+frag_offset: 0
+flags_tree: Layer FLAGS
+:	df: 1
+	rb: 0
+	mf: 0
+
+version: 4
+dsfield: 0x00
+id: 0x668b
+hdr_len: 20
+src: 10.0.0.4
+flags: 0x02
+checksum.status: 2
+dst: 52.81.47.1
+dsfield_tree: Layer DSFIELD
+:	dscp: 0
+	ecn: 0
+
+addr: ['10.0.0.4', '52.81.47.1']
+len: 52
+host: ['10.0.0.4', '52.81.47.1']
+ttl: 63
+proto: 6
+src_host: 10.0.0.4
+checksum: 0x67e3
+stream: 0
+
+-- TCP Layer --
+options: 01:01:08:0a:76:17:18:1f:9e:2b:b1:ff
+urgent_pointer: 0
+completeness: 15
+dstport: 59300
+pnum: 5
+nxtseq: 1
+ack: 42
+status: 2
+completeness_tree: Layer COMPLETENESS
+:	syn: 1
+	fin: 0
+	data: 1
+	ack: 1
+	syn-ack: 1
+	str: ··DASS
+	rst: 0
+
+analysis: Layer ANALYSIS
+:	initial_rtt: 0.218078000
+	ack_rtt: 0.000111000
+	acks_frame: 4
+
+seq: 1
+options_tree: Layer OPTIONS
+:	nop: 01
+	nop: 01
+	timestamp: 08:0a:76:17:18:1f:9e:2b:b1:ff
+	timestamp:
+		tsval: 1981224991
+		tsecr: 2653663743
+		option_kind: 8
+		option_len: 10
+	nop:
+		option_kind: 1
+	nop:
+		option_kind: 1
+
+window_size_scalefactor: 128
+srcport: 5432
+flags_tree: Layer FLAGS
+:	syn: 0
+	ece: 0
+	fin: 0
+	ack: 1
+	reset: 0
+	res: 0
+	cwr: 0
+	urg: 0
+	str: ·······A····
+	push: 0
+	ae: 0
+
+window_size: 65152
+hdr_len: 32
+ack_raw: 2262281736
+flags: 0x0010
+checksum.status: 2
+seq_raw: 2959992958
+stream.pnum: 5
+window_size_value: 509
+len: 0
+port: ['5432', '59300']
+checksum: 0x6d7c
+stream: 0
+========================================
+
+========== Packet #6 ==========
+Arrival Time: 2023-07-14 08:44:36.066273
+
+-- ETH Layer --
+type: 0x0800
+dst: 12:34:56:78:9a:bc
+stream: 0
+dst_tree: Layer DST
+:	lg: 1
+	oui: 1193046
+	ig: 0
+	dst_resolved: 12:34:56:78:9a:bc
+	addr: 12:34:56:78:9a:bc
+	addr_resolved: 12:34:56:78:9a:bc
+	eth.dst_resolved: 12:34:56:78:9a:bc
+
+src: 00:0d:3a:56:47:c7
+src_tree: Layer SRC
+:	lg: 0
+	oui_resolved: Microsoft Corp.
+	oui: 3386
+	ig: 0
+	eth.src_resolved: 00:0d:3a:56:47:c7
+	src_resolved: 00:0d:3a:56:47:c7
+	addr: 00:0d:3a:56:47:c7
+	addr_resolved: 00:0d:3a:56:47:c7
+
+
+-- IP Layer --
+dst_host: 52.81.47.1
+status: 2
+frag_offset: 0
+flags_tree: Layer FLAGS
+:	df: 1
+	rb: 0
+	mf: 0
+
+version: 4
+dsfield: 0x00
+id: 0x668c
+hdr_len: 20
+src: 10.0.0.4
+flags: 0x02
+checksum.status: 2
+dst: 52.81.47.1
+dsfield_tree: Layer DSFIELD
+:	dscp: 0
+	ecn: 0
+
+addr: ['10.0.0.4', '52.81.47.1']
+len: 76
+host: ['10.0.0.4', '52.81.47.1']
+ttl: 63
+proto: 6
+src_host: 10.0.0.4
+checksum: 0x67ca
+stream: 0
+
+-- TCP Layer --
+options: 01:01:08:0a:76:17:18:21:9e:2b:b1:ff
+urgent_pointer: 0
+completeness: 15
+dstport: 59300
+pnum: 6
+nxtseq: 25
+ack: 42
+status: 2
+completeness_tree: Layer COMPLETENESS
+:	syn: 1
+	fin: 0
+	data: 1
+	ack: 1
+	syn-ack: 1
+	str: ··DASS
+	rst: 0
+
+analysis: Layer ANALYSIS
+:	initial_rtt: 0.218078000
+	bytes_in_flight: 24
+	push_bytes_sent: 24
+
+size: 24
+seq: 1
+options_tree: Layer OPTIONS
+:	nop: 01
+	nop: 01
+	timestamp: 08:0a:76:17:18:21:9e:2b:b1:ff
+	timestamp:
+		tsval: 1981224993
+		tsecr: 2653663743
+		option_kind: 8
+		option_len: 10
+	nop:
+		option_kind: 1
+	nop:
+		option_kind: 1
+
+window_size_scalefactor: 128
+srcport: 5432
+flags_tree: Layer FLAGS
+:	syn: 0
+	ece: 0
+	fin: 0
+	ack: 1
+	reset: 0
+	res: 0
+	cwr: 0
+	urg: 0
+	str: ·······AP···
+	push: 1
+	ae: 0
+
+window_size: 65152
+hdr_len: 32
+ack_raw: 2262281736
+flags: 0x0018
+checksum.status: 2
+seq_raw: 2959992958
+stream.pnum: 6
+window_size_value: 509
+len: 24
+port: ['5432', '59300']
+pdu.size: 24
+checksum: 0x6d94
+stream: 0
+
+-- PGSQL Layer --
+frontend: 0
+type: Authentication request
+mech: SCRAM-SHA-256
+length: 23
+auth.sasl.mech: SCRAM-SHA-256
+authtype: 10
+========================================
+
+========== Packet #7 ==========
+Arrival Time: 2023-07-14 08:44:36.284273
+
+-- ETH Layer --
+type: 0x0800
+dst: 00:0d:3a:56:47:c7
+stream: 0
+dst_tree: Layer DST
+:	lg: 0
+	oui_resolved: Microsoft Corp.
+	oui: 3386
+	ig: 0
+	dst_resolved: 00:0d:3a:56:47:c7
+	addr: 00:0d:3a:56:47:c7
+	addr_resolved: 00:0d:3a:56:47:c7
+	eth.dst_resolved: 00:0d:3a:56:47:c7
+
+src: 12:34:56:78:9a:bc
+src_tree: Layer SRC
+:	lg: 1
+	oui: 1193046
+	ig: 0
+	eth.src_resolved: 12:34:56:78:9a:bc
+	src_resolved: 12:34:56:78:9a:bc
+	addr: 12:34:56:78:9a:bc
+	addr_resolved: 12:34:56:78:9a:bc
+
+
+-- IP Layer --
+dst_host: 10.0.0.4
+status: 2
+frag_offset: 0
+flags_tree: Layer FLAGS
+:	df: 1
+	rb: 0
+	mf: 0
+
+version: 4
+dsfield: 0x00
+id: 0xf0cc
+hdr_len: 20
+src: 52.81.47.1
+flags: 0x02
+checksum.status: 2
+dst: 10.0.0.4
+dsfield_tree: Layer DSFIELD
+:	dscp: 0
+	ecn: 0
+
+addr: ['52.81.47.1', '10.0.0.4']
+len: 52
+host: ['52.81.47.1', '10.0.0.4']
+ttl: 31
+proto: 6
+src_host: 52.81.47.1
+checksum: 0xfda1
+stream: 0
+
+-- TCP Layer --
+options: 01:01:08:0a:9e:2b:b2:db:76:17:18:21
+urgent_pointer: 0
+completeness: 15
+dstport: 5432
+pnum: 7
+nxtseq: 42
+ack: 25
+status: 2
+completeness_tree: Layer COMPLETENESS
+:	syn: 1
+	fin: 0
+	data: 1
+	ack: 1
+	syn-ack: 1
+	str: ··DASS
+	rst: 0
+
+analysis: Layer ANALYSIS
+:	initial_rtt: 0.218078000
+	ack_rtt: 0.218000000
+	acks_frame: 6
+
+seq: 42
+options_tree: Layer OPTIONS
+:	nop: 01
+	nop: 01
+	timestamp: 08:0a:9e:2b:b2:db:76:17:18:21
+	timestamp:
+		tsval: 2653663963
+		tsecr: 1981224993
+		option_kind: 8
+		option_len: 10
+	nop:
+		option_kind: 1
+	nop:
+		option_kind: 1
+
+window_size_scalefactor: 128
+srcport: 59300
+flags_tree: Layer FLAGS
+:	syn: 0
+	ece: 0
+	fin: 0
+	ack: 1
+	reset: 0
+	res: 0
+	cwr: 0
+	urg: 0
+	str: ·······A····
+	push: 0
+	ae: 0
+
+window_size: 64256
+hdr_len: 32
+ack_raw: 2959992982
+flags: 0x0010
+checksum.status: 2
+seq_raw: 2262281736
+stream.pnum: 7
+window_size_value: 502
+len: 0
+port: ['59300', '5432']
+checksum: 0x5d70
+stream: 0
+========================================
+
+========== Packet #8 ==========
+Arrival Time: 2023-07-14 08:44:36.284273
+
+-- ETH Layer --
+type: 0x0800
+dst: 00:0d:3a:56:47:c7
+stream: 0
+dst_tree: Layer DST
+:	lg: 0
+	oui_resolved: Microsoft Corp.
+	oui: 3386
+	ig: 0
+	dst_resolved: 00:0d:3a:56:47:c7
+	addr: 00:0d:3a:56:47:c7
+	addr_resolved: 00:0d:3a:56:47:c7
+	eth.dst_resolved: 00:0d:3a:56:47:c7
+
+src: 12:34:56:78:9a:bc
+src_tree: Layer SRC
+:	lg: 1
+	oui: 1193046
+	ig: 0
+	eth.src_resolved: 12:34:56:78:9a:bc
+	src_resolved: 12:34:56:78:9a:bc
+	addr: 12:34:56:78:9a:bc
+	addr_resolved: 12:34:56:78:9a:bc
+
+
+-- IP Layer --
+dst_host: 10.0.0.4
+status: 2
+frag_offset: 0
+flags_tree: Layer FLAGS
+:	df: 1
+	rb: 0
+	mf: 0
+
+version: 4
+dsfield: 0x00
+id: 0xf0cd
+hdr_len: 20
+src: 52.81.47.1
+flags: 0x02
+checksum.status: 2
+dst: 10.0.0.4
+dsfield_tree: Layer DSFIELD
+:	dscp: 0
+	ecn: 0
+
+addr: ['52.81.47.1', '10.0.0.4']
+len: 107
+host: ['52.81.47.1', '10.0.0.4']
+ttl: 31
+proto: 6
+src_host: 52.81.47.1
+checksum: 0xfd69
+stream: 0
+
+-- TCP Layer --
+options: 01:01:08:0a:9e:2b:b2:db:76:17:18:21
+urgent_pointer: 0
+completeness: 15
+dstport: 5432
+pnum: 8
+nxtseq: 97
+ack: 25
+status: 2
+completeness_tree: Layer COMPLETENESS
+:	syn: 1
+	fin: 0
+	data: 1
+	ack: 1
+	syn-ack: 1
+	str: ··DASS
+	rst: 0
+
+analysis: Layer ANALYSIS
+:	initial_rtt: 0.218078000
+	bytes_in_flight: 55
+	push_bytes_sent: 55
+
+size: 55
+seq: 42
+options_tree: Layer OPTIONS
+:	nop: 01
+	nop: 01
+	timestamp: 08:0a:9e:2b:b2:db:76:17:18:21
+	timestamp:
+		tsval: 2653663963
+		tsecr: 1981224993
+		option_kind: 8
+		option_len: 10
+	nop:
+		option_kind: 1
+	nop:
+		option_kind: 1
+
+window_size_scalefactor: 128
+srcport: 59300
+flags_tree: Layer FLAGS
+:	syn: 0
+	ece: 0
+	fin: 0
+	ack: 1
+	reset: 0
+	res: 0
+	cwr: 0
+	urg: 0
+	str: ·······AP···
+	push: 1
+	ae: 0
+
+window_size: 64256
+hdr_len: 32
+ack_raw: 2959992982
+flags: 0x0018
+checksum.status: 2
+seq_raw: 2262281736
+stream.pnum: 8
+window_size_value: 502
+len: 55
+port: ['59300', '5432']
+pdu.size: 55
+checksum: 0xf8a1
+stream: 0
+
+-- PGSQL Layer --
+frontend: 1
+auth.sasl.data: 6e:2c:2c:6e:3d:2c:72:3d:74:61:31:48:31:53:54:36:73:71:43:61:2b:67:32:69:39:39:32:76:32:71:77:46
+auth.sasl.data.length: 32
+type: SASLInitialResponse message
+data: 6e:2c:2c:6e:3d:2c:72:3d:74:61:31:48:31:53:54:36:73:71:43:61:2b:67:32:69:39:39:32:76:32:71:77:46
+mech: SCRAM-SHA-256
+length: 54
+auth.sasl.mech: SCRAM-SHA-256
+========================================
+
+========== Packet #9 ==========
+Arrival Time: 2023-07-14 08:44:36.284827
+
+-- ETH Layer --
+type: 0x0800
+dst: 12:34:56:78:9a:bc
+stream: 0
+dst_tree: Layer DST
+:	lg: 1
+	oui: 1193046
+	ig: 0
+	dst_resolved: 12:34:56:78:9a:bc
+	addr: 12:34:56:78:9a:bc
+	addr_resolved: 12:34:56:78:9a:bc
+	eth.dst_resolved: 12:34:56:78:9a:bc
+
+src: 00:0d:3a:56:47:c7
+src_tree: Layer SRC
+:	lg: 0
+	oui_resolved: Microsoft Corp.
+	oui: 3386
+	ig: 0
+	eth.src_resolved: 00:0d:3a:56:47:c7
+	src_resolved: 00:0d:3a:56:47:c7
+	addr: 00:0d:3a:56:47:c7
+	addr_resolved: 00:0d:3a:56:47:c7
+
+
+-- IP Layer --
+dst_host: 52.81.47.1
+status: 2
+frag_offset: 0
+flags_tree: Layer FLAGS
+:	df: 1
+	rb: 0
+	mf: 0
+
+version: 4
+dsfield: 0x00
+id: 0x668d
+hdr_len: 20
+src: 10.0.0.4
+flags: 0x02
+checksum.status: 2
+dst: 52.81.47.1
+dsfield_tree: Layer DSFIELD
+:	dscp: 0
+	ecn: 0
+
+addr: ['10.0.0.4', '52.81.47.1']
+len: 145
+host: ['10.0.0.4', '52.81.47.1']
+ttl: 63
+proto: 6
+src_host: 10.0.0.4
+checksum: 0x6784
+stream: 0
+
+-- TCP Layer --
+options: 01:01:08:0a:76:17:18:fb:9e:2b:b2:db
+urgent_pointer: 0
+completeness: 15
+dstport: 59300
+pnum: 9
+nxtseq: 118
+ack: 97
+status: 2
+completeness_tree: Layer COMPLETENESS
+:	syn: 1
+	fin: 0
+	data: 1
+	ack: 1
+	syn-ack: 1
+	str: ··DASS
+	rst: 0
+
+analysis: Layer ANALYSIS
+:	bytes_in_flight: 93
+	ack_rtt: 0.000554000
+	push_bytes_sent: 93
+	initial_rtt: 0.218078000
+	acks_frame: 8
+
+size: 93
+seq: 25
+options_tree: Layer OPTIONS
+:	nop: 01
+	nop: 01
+	timestamp: 08:0a:76:17:18:fb:9e:2b:b2:db
+	timestamp:
+		tsval: 1981225211
+		tsecr: 2653663963
+		option_kind: 8
+		option_len: 10
+	nop:
+		option_kind: 1
+	nop:
+		option_kind: 1
+
+window_size_scalefactor: 128
+srcport: 5432
+flags_tree: Layer FLAGS
+:	syn: 0
+	ece: 0
+	fin: 0
+	ack: 1
+	reset: 0
+	res: 0
+	cwr: 0
+	urg: 0
+	str: ·······AP···
+	push: 1
+	ae: 0
+
+window_size: 65152
+hdr_len: 32
+ack_raw: 2262281791
+flags: 0x0018
+checksum.status: 2
+seq_raw: 2959992982
+stream.pnum: 9
+window_size_value: 509
+len: 93
+port: ['5432', '59300']
+pdu.size: 93
+checksum: 0x6dd9
+stream: 0
+
+-- PGSQL Layer --
+frontend: 0
+auth.sasl.data: 72:3d:74:61:31:48:31:53:54:36:73:71:43:61:2b:67:32:69:39:39:32:76:32:71:77:46:67:56:43:5a:47:4c:4b:64:6f:68:55:2b:48:4e:67:39:6d:62:41:31:36:44:41:72:2c:73:3d:45:4d:72:55:66:7a:32:49:55:45:4a:48:50:71:35:42:7a:58:67:4c:52:77:3d:3d:2c:69:3d:34:30:39:36
+type: Authentication request
+data: 72:3d:74:61:31:48:31:53:54:36:73:71:43:61:2b:67:32:69:39:39:32:76:32:71:77:46:67:56:43:5a:47:4c:4b:64:6f:68:55:2b:48:4e:67:39:6d:62:41:31:36:44:41:72:2c:73:3d:45:4d:72:55:66:7a:32:49:55:45:4a:48:50:71:35:42:7a:58:67:4c:52:77:3d:3d:2c:69:3d:34:30:39:36
+length: 92
+authtype: 11
+========================================
+
+========== Packet #10 ==========
+Arrival Time: 2023-07-14 08:44:36.509231
+
+-- ETH Layer --
+type: 0x0800
+dst: 00:0d:3a:56:47:c7
+stream: 0
+dst_tree: Layer DST
+:	lg: 0
+	oui_resolved: Microsoft Corp.
+	oui: 3386
+	ig: 0
+	dst_resolved: 00:0d:3a:56:47:c7
+	addr: 00:0d:3a:56:47:c7
+	addr_resolved: 00:0d:3a:56:47:c7
+	eth.dst_resolved: 00:0d:3a:56:47:c7
+
+src: 12:34:56:78:9a:bc
+src_tree: Layer SRC
+:	lg: 1
+	oui: 1193046
+	ig: 0
+	eth.src_resolved: 12:34:56:78:9a:bc
+	src_resolved: 12:34:56:78:9a:bc
+	addr: 12:34:56:78:9a:bc
+	addr_resolved: 12:34:56:78:9a:bc
+
+
+-- IP Layer --
+dst_host: 10.0.0.4
+status: 2
+frag_offset: 0
+flags_tree: Layer FLAGS
+:	df: 1
+	rb: 0
+	mf: 0
+
+version: 4
+dsfield: 0x00
+id: 0xf0ce
+hdr_len: 20
+src: 52.81.47.1
+flags: 0x02
+checksum.status: 2
+dst: 10.0.0.4
+dsfield_tree: Layer DSFIELD
+:	dscp: 0
+	ecn: 0
+
+addr: ['52.81.47.1', '10.0.0.4']
+len: 161
+host: ['52.81.47.1', '10.0.0.4']
+ttl: 31
+proto: 6
+src_host: 52.81.47.1
+checksum: 0xfd32
+stream: 0
+
+-- TCP Layer --
+options: 01:01:08:0a:9e:2b:b3:bc:76:17:18:fb
+urgent_pointer: 0
+completeness: 15
+dstport: 5432
+pnum: 10
+nxtseq: 206
+ack: 118
+status: 2
+completeness_tree: Layer COMPLETENESS
+:	syn: 1
+	fin: 0
+	data: 1
+	ack: 1
+	syn-ack: 1
+	str: ··DASS
+	rst: 0
+
+analysis: Layer ANALYSIS
+:	bytes_in_flight: 109
+	ack_rtt: 0.224404000
+	push_bytes_sent: 109
+	initial_rtt: 0.218078000
+	acks_frame: 9
+
+size: 109
+seq: 97
+options_tree: Layer OPTIONS
+:	nop: 01
+	nop: 01
+	timestamp: 08:0a:9e:2b:b3:bc:76:17:18:fb
+	timestamp:
+		tsval: 2653664188
+		tsecr: 1981225211
+		option_kind: 8
+		option_len: 10
+	nop:
+		option_kind: 1
+	nop:
+		option_kind: 1
+
+window_size_scalefactor: 128
+srcport: 59300
+flags_tree: Layer FLAGS
+:	syn: 0
+	ece: 0
+	fin: 0
+	ack: 1
+	reset: 0
+	res: 0
+	cwr: 0
+	urg: 0
+	str: ·······AP···
+	push: 1
+	ae: 0
+
+window_size: 64256
+hdr_len: 32
+ack_raw: 2959993075
+flags: 0x0018
+checksum.status: 2
+seq_raw: 2262281791
+stream.pnum: 10
+window_size_value: 502
+len: 109
+port: ['59300', '5432']
+pdu.size: 109
+checksum: 0xe76b
+stream: 0
+
+-- PGSQL Layer --
+frontend: 1
+auth.sasl.data: 63:3d:62:69:77:73:2c:72:3d:74:61:31:48:31:53:54:36:73:71:43:61:2b:67:32:69:39:39:32:76:32:71:77:46:67:56:43:5a:47:4c:4b:64:6f:68:55:2b:48:4e:67:39:6d:62:41:31:36:44:41:72:2c:70:3d:69:46:45:33:46:6b:4c:57:4f:67:56:59:38:73:38:79:55:75:56:62:54:53:67:48:6c:5a:56:35:36:69:68:5a:61:62:77:39:35:31:43:65:6d:54:45:3d
+type: SASLResponse message
+data: 63:3d:62:69:77:73:2c:72:3d:74:61:31:48:31:53:54:36:73:71:43:61:2b:67:32:69:39:39:32:76:32:71:77:46:67:56:43:5a:47:4c:4b:64:6f:68:55:2b:48:4e:67:39:6d:62:41:31:36:44:41:72:2c:70:3d:69:46:45:33:46:6b:4c:57:4f:67:56:59:38:73:38:79:55:75:56:62:54:53:67:48:6c:5a:56:35:36:69:68:5a:61:62:77:39:35:31:43:65:6d:54:45:3d
+length: 108
+========================================
+
+========== Packet #11 ==========
+Arrival Time: 2023-07-14 08:44:36.509673
+
+-- ETH Layer --
+type: 0x0800
+dst: 12:34:56:78:9a:bc
+stream: 0
+dst_tree: Layer DST
+:	lg: 1
+	oui: 1193046
+	ig: 0
+	dst_resolved: 12:34:56:78:9a:bc
+	addr: 12:34:56:78:9a:bc
+	addr_resolved: 12:34:56:78:9a:bc
+	eth.dst_resolved: 12:34:56:78:9a:bc
+
+src: 00:0d:3a:56:47:c7
+src_tree: Layer SRC
+:	lg: 0
+	oui_resolved: Microsoft Corp.
+	oui: 3386
+	ig: 0
+	eth.src_resolved: 00:0d:3a:56:47:c7
+	src_resolved: 00:0d:3a:56:47:c7
+	addr: 00:0d:3a:56:47:c7
+	addr_resolved: 00:0d:3a:56:47:c7
+
+
+-- IP Layer --
+dst_host: 52.81.47.1
+status: 2
+frag_offset: 0
+flags_tree: Layer FLAGS
+:	df: 1
+	rb: 0
+	mf: 0
+
+version: 4
+dsfield: 0x00
+id: 0x668e
+hdr_len: 20
+src: 10.0.0.4
+flags: 0x02
+checksum.status: 2
+dst: 52.81.47.1
+dsfield_tree: Layer DSFIELD
+:	dscp: 0
+	ecn: 0
+
+addr: ['10.0.0.4', '52.81.47.1']
+len: 157
+host: ['10.0.0.4', '52.81.47.1']
+ttl: 63
+proto: 6
+src_host: 10.0.0.4
+checksum: 0x6777
+stream: 0
+
+-- TCP Layer --
+options: 01:01:08:0a:76:17:19:dc:9e:2b:b3:bc
+urgent_pointer: 0
+completeness: 15
+dstport: 59300
+pnum: 11
+nxtseq: 223
+ack: 206
+status: 2
+completeness_tree: Layer COMPLETENESS
+:	syn: 1
+	fin: 0
+	data: 1
+	ack: 1
+	syn-ack: 1
+	str: ··DASS
+	rst: 0
+
+analysis: Layer ANALYSIS
+:	bytes_in_flight: 105
+	ack_rtt: 0.000442000
+	push_bytes_sent: 105
+	initial_rtt: 0.218078000
+	acks_frame: 10
+
+size: 105
+seq: 118
+options_tree: Layer OPTIONS
+:	nop: 01
+	nop: 01
+	timestamp: 08:0a:76:17:19:dc:9e:2b:b3:bc
+	timestamp:
+		tsval: 1981225436
+		tsecr: 2653664188
+		option_kind: 8
+		option_len: 10
+	nop:
+		option_kind: 1
+	nop:
+		option_kind: 1
+
+window_size_scalefactor: 128
+srcport: 5432
+flags_tree: Layer FLAGS
+:	syn: 0
+	ece: 0
+	fin: 0
+	ack: 1
+	reset: 0
+	res: 0
+	cwr: 0
+	urg: 0
+	str: ·······AP···
+	push: 1
+	ae: 0
+
+window_size: 65152
+hdr_len: 32
+ack_raw: 2262281900
+flags: 0x0018
+checksum.status: 2
+seq_raw: 2959993075
+stream.pnum: 11
+window_size_value: 509
+len: 105
+port: ['5432', '59300']
+pdu.size: 105
+checksum: 0x6de5
+stream: 0
+
+-- PGSQL Layer --
+frontend: 0
+type: Error
+severity: FATAL
+file: auth.c
+line: 326
+text: FATAL
+routine: auth_failed
+length: 104
+code: 28P01
+message: password authentication failed for user "postgres"
+========================================
+
+========== Packet #12 ==========
+Arrival Time: 2023-07-14 08:44:36.511590
+
+-- ETH Layer --
+type: 0x0800
+dst: 12:34:56:78:9a:bc
+stream: 0
+dst_tree: Layer DST
+:	lg: 1
+	oui: 1193046
+	ig: 0
+	dst_resolved: 12:34:56:78:9a:bc
+	addr: 12:34:56:78:9a:bc
+	addr_resolved: 12:34:56:78:9a:bc
+	eth.dst_resolved: 12:34:56:78:9a:bc
+
+src: 00:0d:3a:56:47:c7
+src_tree: Layer SRC
+:	lg: 0
+	oui_resolved: Microsoft Corp.
+	oui: 3386
+	ig: 0
+	eth.src_resolved: 00:0d:3a:56:47:c7
+	src_resolved: 00:0d:3a:56:47:c7
+	addr: 00:0d:3a:56:47:c7
+	addr_resolved: 00:0d:3a:56:47:c7
+
+
+-- IP Layer --
+dst_host: 52.81.47.1
+status: 2
+frag_offset: 0
+flags_tree: Layer FLAGS
+:	df: 1
+	rb: 0
+	mf: 0
+
+version: 4
+dsfield: 0x00
+id: 0x668f
+hdr_len: 20
+src: 10.0.0.4
+flags: 0x02
+checksum.status: 2
+dst: 52.81.47.1
+dsfield_tree: Layer DSFIELD
+:	dscp: 0
+	ecn: 0
+
+addr: ['10.0.0.4', '52.81.47.1']
+len: 52
+host: ['10.0.0.4', '52.81.47.1']
+ttl: 63
+proto: 6
+src_host: 10.0.0.4
+checksum: 0x67df
+stream: 0
+
+-- TCP Layer --
+options: 01:01:08:0a:76:17:19:de:9e:2b:b3:bc
+urgent_pointer: 0
+completeness: 15
+dstport: 59300
+pnum: 12
+nxtseq: 224
+ack: 206
+status: 2
+completeness_tree: Layer COMPLETENESS
+:	syn: 1
+	fin: 0
+	data: 1
+	ack: 1
+	syn-ack: 1
+	str: ··DASS
+	rst: 0
+
+seq: 223
+options_tree: Layer OPTIONS
+:	nop: 01
+	nop: 01
+	timestamp: 08:0a:76:17:19:de:9e:2b:b3:bc
+	timestamp:
+		tsval: 1981225438
+		tsecr: 2653664188
+		option_kind: 8
+		option_len: 10
+	nop:
+		option_kind: 1
+	nop:
+		option_kind: 1
+
+window_size_scalefactor: 128
+srcport: 5432
+flags_tree: Layer FLAGS
+:	syn: 0
+	ece: 0
+	fin: 1
+	fin:
+		expert:
+			group: 33554432
+			fin: 
+			severity: 2097152
+			message: Connection finish (FIN)
+	ack: 1
+	reset: 0
+	res: 0
+	cwr: 0
+	urg: 0
+	str: ·······A···F
+	push: 0
+	str:
+		expert:
+			group: 33554432
+			fin_active: 
+			severity: 4194304
+			message: This frame initiates the connection closing
+	ae: 0
+
+window_size: 65152
+hdr_len: 32
+ack_raw: 2262281900
+flags: 0x0011
+checksum.status: 2
+seq_raw: 2959993180
+stream.pnum: 12
+window_size_value: 509
+len: 0
+port: ['5432', '59300']
+checksum: 0x6d7c
+stream: 0
+========================================
+
+========== Packet #13 ==========
+Arrival Time: 2023-07-14 08:44:36.727690
+
+-- ETH Layer --
+type: 0x0800
+dst: 00:0d:3a:56:47:c7
+stream: 0
+dst_tree: Layer DST
+:	lg: 0
+	oui_resolved: Microsoft Corp.
+	oui: 3386
+	ig: 0
+	dst_resolved: 00:0d:3a:56:47:c7
+	addr: 00:0d:3a:56:47:c7
+	addr_resolved: 00:0d:3a:56:47:c7
+	eth.dst_resolved: 00:0d:3a:56:47:c7
+
+src: 12:34:56:78:9a:bc
+src_tree: Layer SRC
+:	lg: 1
+	oui: 1193046
+	ig: 0
+	eth.src_resolved: 12:34:56:78:9a:bc
+	src_resolved: 12:34:56:78:9a:bc
+	addr: 12:34:56:78:9a:bc
+	addr_resolved: 12:34:56:78:9a:bc
+
+
+-- IP Layer --
+dst_host: 10.0.0.4
+status: 2
+frag_offset: 0
+flags_tree: Layer FLAGS
+:	df: 1
+	rb: 0
+	mf: 0
+
+version: 4
+dsfield: 0x00
+id: 0xf0cf
+hdr_len: 20
+src: 52.81.47.1
+flags: 0x02
+checksum.status: 2
+dst: 10.0.0.4
+dsfield_tree: Layer DSFIELD
+:	dscp: 0
+	ecn: 0
+
+addr: ['52.81.47.1', '10.0.0.4']
+len: 52
+host: ['52.81.47.1', '10.0.0.4']
+ttl: 31
+proto: 6
+src_host: 52.81.47.1
+checksum: 0xfd9e
+stream: 0
+
+-- TCP Layer --
+options: 01:01:08:0a:9e:2b:b4:96:76:17:19:dc
+urgent_pointer: 0
+completeness: 31
+dstport: 5432
+pnum: 13
+nxtseq: 207
+ack: 223
+status: 2
+completeness_tree: Layer COMPLETENESS
+:	syn: 1
+	fin: 1
+	data: 1
+	ack: 1
+	syn-ack: 1
+	str: ·FDASS
+	rst: 0
+
+analysis: Layer ANALYSIS
+:	initial_rtt: 0.218078000
+	ack_rtt: 0.218017000
+	acks_frame: 11
+
+seq: 206
+options_tree: Layer OPTIONS
+:	nop: 01
+	nop: 01
+	timestamp: 08:0a:9e:2b:b4:96:76:17:19:dc
+	timestamp:
+		tsval: 2653664406
+		tsecr: 1981225436
+		option_kind: 8
+		option_len: 10
+	nop:
+		option_kind: 1
+	nop:
+		option_kind: 1
+
+window_size_scalefactor: 128
+srcport: 59300
+flags_tree: Layer FLAGS
+:	syn: 0
+	ece: 0
+	fin: 1
+	fin:
+		expert:
+			group: 33554432
+			fin: 
+			severity: 2097152
+			message: Connection finish (FIN)
+	ack: 1
+	reset: 0
+	res: 0
+	cwr: 0
+	urg: 0
+	str: ·······A···F
+	push: 0
+	str:
+		expert:
+			fin_passive: 
+			group: 33554432
+			severity: 4194304
+			message: This frame undergoes the connection closing
+	ae: 0
+
+window_size: 64256
+hdr_len: 32
+ack_raw: 2959993180
+flags: 0x0011
+checksum.status: 2
+seq_raw: 2262281900
+stream.pnum: 13
+window_size_value: 502
+len: 0
+port: ['59300', '5432']
+checksum: 0x588f
+stream: 0
+========================================
+
+========== Packet #14 ==========
+Arrival Time: 2023-07-14 08:44:36.727774
+
+-- ETH Layer --
+type: 0x0800
+dst: 12:34:56:78:9a:bc
+stream: 0
+dst_tree: Layer DST
+:	lg: 1
+	oui: 1193046
+	ig: 0
+	dst_resolved: 12:34:56:78:9a:bc
+	addr: 12:34:56:78:9a:bc
+	addr_resolved: 12:34:56:78:9a:bc
+	eth.dst_resolved: 12:34:56:78:9a:bc
+
+src: 00:0d:3a:56:47:c7
+src_tree: Layer SRC
+:	lg: 0
+	oui_resolved: Microsoft Corp.
+	oui: 3386
+	ig: 0
+	eth.src_resolved: 00:0d:3a:56:47:c7
+	src_resolved: 00:0d:3a:56:47:c7
+	addr: 00:0d:3a:56:47:c7
+	addr_resolved: 00:0d:3a:56:47:c7
+
+
+-- IP Layer --
+dst_host: 52.81.47.1
+status: 2
+frag_offset: 0
+flags_tree: Layer FLAGS
+:	df: 1
+	rb: 0
+	mf: 0
+
+version: 4
+dsfield: 0x00
+id: 0x6690
+hdr_len: 20
+src: 10.0.0.4
+flags: 0x02
+checksum.status: 2
+dst: 52.81.47.1
+dsfield_tree: Layer DSFIELD
+:	dscp: 0
+	ecn: 0
+
+addr: ['10.0.0.4', '52.81.47.1']
+len: 52
+host: ['10.0.0.4', '52.81.47.1']
+ttl: 63
+proto: 6
+src_host: 10.0.0.4
+checksum: 0x67de
+stream: 0
+
+-- TCP Layer --
+options: 01:01:08:0a:76:17:1a:b6:9e:2b:b4:96
+urgent_pointer: 0
+completeness: 31
+dstport: 59300
+pnum: 14
+nxtseq: 224
+ack: 207
+status: 2
+completeness_tree: Layer COMPLETENESS
+:	syn: 1
+	fin: 1
+	data: 1
+	ack: 1
+	syn-ack: 1
+	str: ·FDASS
+	rst: 0
+
+analysis: Layer ANALYSIS
+:	initial_rtt: 0.218078000
+	ack_rtt: 0.000084000
+	acks_frame: 13
+
+seq: 224
+options_tree: Layer OPTIONS
+:	nop: 01
+	nop: 01
+	timestamp: 08:0a:76:17:1a:b6:9e:2b:b4:96
+	timestamp:
+		tsval: 1981225654
+		tsecr: 2653664406
+		option_kind: 8
+		option_len: 10
+	nop:
+		option_kind: 1
+	nop:
+		option_kind: 1
+
+window_size_scalefactor: 128
+srcport: 5432
+flags_tree: Layer FLAGS
+:	syn: 0
+	ece: 0
+	fin: 0
+	ack: 1
+	reset: 0
+	res: 0
+	cwr: 0
+	urg: 0
+	str: ·······A····
+	push: 0
+	ae: 0
+
+window_size: 65152
+hdr_len: 32
+ack_raw: 2262281901
+flags: 0x0010
+checksum.status: 2
+seq_raw: 2959993181
+stream.pnum: 14
+window_size_value: 509
+len: 0
+port: ['5432', '59300']
+checksum: 0x6d7c
+stream: 0
+========================================
+
+========== Packet #15 ==========
+Arrival Time: 2023-07-14 08:44:36.729746
+
+-- ETH Layer --
+type: 0x0800
+dst: 00:0d:3a:56:47:c7
+stream: 0
+dst_tree: Layer DST
+:	lg: 0
+	oui_resolved: Microsoft Corp.
+	oui: 3386
+	ig: 0
+	dst_resolved: 00:0d:3a:56:47:c7
+	addr: 00:0d:3a:56:47:c7
+	addr_resolved: 00:0d:3a:56:47:c7
+	eth.dst_resolved: 00:0d:3a:56:47:c7
+
+src: 12:34:56:78:9a:bc
+src_tree: Layer SRC
+:	lg: 1
+	oui: 1193046
+	ig: 0
+	eth.src_resolved: 12:34:56:78:9a:bc
+	src_resolved: 12:34:56:78:9a:bc
+	addr: 12:34:56:78:9a:bc
+	addr_resolved: 12:34:56:78:9a:bc
+
+
+-- IP Layer --
+dst_host: 10.0.0.4
+status: 2
+frag_offset: 0
+flags_tree: Layer FLAGS
+:	df: 1
+	rb: 0
+	mf: 0
+
+version: 4
+dsfield: 0x00
+id: 0xf0d0
+hdr_len: 20
+src: 52.81.47.1
+flags: 0x02
+checksum.status: 2
+dst: 10.0.0.4
+dsfield_tree: Layer DSFIELD
+:	dscp: 0
+	ecn: 0
+
+addr: ['52.81.47.1', '10.0.0.4']
+len: 52
+host: ['52.81.47.1', '10.0.0.4']
+ttl: 31
+proto: 6
+src_host: 52.81.47.1
+checksum: 0xfd9d
+stream: 0
+
+-- TCP Layer --
+options: 01:01:08:0a:9e:2b:b4:98:76:17:19:de
+urgent_pointer: 0
+completeness: 31
+dstport: 5432
+pnum: 15
+nxtseq: 207
+ack: 224
+status: 2
+completeness_tree: Layer COMPLETENESS
+:	syn: 1
+	fin: 1
+	data: 1
+	ack: 1
+	syn-ack: 1
+	str: ·FDASS
+	rst: 0
+
+analysis: Layer ANALYSIS
+:	initial_rtt: 0.218078000
+	ack_rtt: 0.218156000
+	acks_frame: 12
+
+seq: 207
+options_tree: Layer OPTIONS
+:	nop: 01
+	nop: 01
+	timestamp: 08:0a:9e:2b:b4:98:76:17:19:de
+	timestamp:
+		tsval: 2653664408
+		tsecr: 1981225438
+		option_kind: 8
+		option_len: 10
+	nop:
+		option_kind: 1
+	nop:
+		option_kind: 1
+
+window_size_scalefactor: 128
+srcport: 59300
+flags_tree: Layer FLAGS
+:	syn: 0
+	ece: 0
+	fin: 0
+	ack: 1
+	reset: 0
+	res: 0
+	cwr: 0
+	urg: 0
+	str: ·······A····
+	push: 0
+	ae: 0
+
+window_size: 64256
+hdr_len: 32
+ack_raw: 2959993181
+flags: 0x0010
+checksum.status: 2
+seq_raw: 2262281901
+stream.pnum: 15
+window_size_value: 502
+len: 0
+port: ['59300', '5432']
+checksum: 0x588a
+stream: 0
+========================================

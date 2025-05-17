@@ -1,0 +1,66 @@
+File: packet_patator-multi-cloud-benign2-11603_benign.txt
+Label: Benign
+Description: This network state captures a brief HTTP interaction, specifically a client (169.231.54.0) requesting the `/docs` endpoint from a server (10.0.0.4) serving a Swagger UI. The initial TCP handshake (SYN, SYN+ACK, ACK) is followed by the client sending an HTTP GET request. The server responds with a 200 OK and the HTML content for the Swagger UI. The client acknowledges the data, and then the connection is gracefully closed with FIN packets exchanged in both directions. The capture also shows TCP options like MSS, Window Scale and Timestamps being negotiated and used.
+==================================================
+File: packet_patator-multi-cloud-benign2-0910_benign.txt
+Label: Benign
+Description: This network state captures a TCP handshake and a subsequent HTTP GET request, followed by the HTTP response.
+
+*   **TCP Handshake:** Packets 1 and 2 show the initial SYN and SYN-ACK exchange between `169.231.183.238:46270` and `10.0.0.4:26611`. Packet 3 completes the three-way handshake with an ACK.
+*   **HTTP Request:** Packet 4 contains an HTTP GET request for `/docs` at `http://20.124.208.229:26611/`, originating from a Python client (`User-Agent: Python/3.9 aiohttp/3.8.3`).
+*   **HTTP Response:** Packets 6 and 7 contain data of the HTTP 200 OK response, serving HTML content (likely a Swagger UI). Packet 7 contains the bulk of the HTML content.
+*   **Acknowledgments:** Packets 5, 8 and 9 acknowledge the received data.
+*   **Connection Reset:** Finally, Packet 10 shows a connection reset (RST) sent from the client (`169.231.183.238`) to the server (`10.0.0.4`).
+
+The traffic is unencrypted HTTP. There's a noticeable RTT of around 0.08 seconds between the initial SYN and the ACK of the SYN-ACK. The client appears to be using TCP window scaling.
+==================================================
+File: packet_patator-multi-cloud-benign2-195329_benign.txt
+Label: Benign
+Description: This network state captures a failed PostgreSQL authentication attempt using SCRAM-SHA-256 over TCP. The client at 52.81.47.1 (MAC address 12:34:56:78:9a:bc) attempts to connect to a PostgreSQL server at 10.0.0.4 (MAC address 00:0d:3a:56:47:c7) on port 5432. The handshake starts successfully, negotiates SCRAM-SHA-256 authentication, exchanges several SASL messages, but ultimately fails with a "password authentication failed for user 'postgres'" error message (Packet #11). The connection is then gracefully closed with FIN packets exchanged by both the client and server. The traffic is unencrypted, and timestamps are exchanged using TCP options.
+==================================================
+File: packet_patator-multi-cloud-benign2-193503_benign.txt
+Label: Benign
+Description: This network state captures a failed PostgreSQL authentication attempt over TCP between hosts 52.81.47.1 (source) and 10.0.0.4 (destination). The communication starts with a TCP handshake (SYN, SYN-ACK, ACK), followed by SASL authentication negotiation using SCRAM-SHA-256. The server (10.0.0.4) responds with an "Authentication request" message containing SASL data. The client (52.81.47.1) sends back an initial and subsequent SASL responses. Ultimately, the server responds with an "Error" message indicating a "password authentication failed for user 'postgres'". The connection is then gracefully closed with FIN packets from both sides.  The initial RTT is approximately 263ms and window scaling is utilized to increase the window size.
+==================================================
+File: packet_patator-multi-cloud-benign2-8582_benign.txt
+Label: Benign
+Description: This network state captures a TCP handshake and HTTP GET request, followed by a graceful connection termination (FIN). 
+
+*   **TCP Handshake:** Packets 1-3 show the typical SYN, SYN-ACK, and ACK exchange to establish a TCP connection between `169.231.183.238:58202` and `10.0.0.4:26611`.
+*   **HTTP GET Request:** Packet 4 contains an HTTP GET request for `/docs` on host `20.124.208.229:26611`. The User-Agent is `Python/3.9 aiohttp/3.8.3`.
+*   **HTTP Response:** Packets 6 and 7 contain the HTTP response, including headers and HTML content for the requested `/docs` page which appears to be a Swagger UI.
+*   **Data Transfer:** Packets 4, 6, and 7 show data being transferred from `169.231.183.238` to `10.0.0.4`, while packets 5, 6, and 7 contain data from `10.0.0.4` to `169.231.183.238`.
+*   **Graceful Connection Termination:** Packets 10 and 11 show the initiation of a graceful TCP connection termination with FIN flags being exchanged. Subsequent packets acknowledge the FIN.
+*   **Timestamps:** TCP Timestamp option is in use, allowing accurate RTT calculations to be performed.
+*   **Window Scaling:** Window scaling is used (window_size_scalefactor = 128)
+==================================================
+File: packet_patator-multi-cloud-benign2-228357_benign.txt
+Label: Benign
+Description: This network state captures a short HTTP communication between `10.0.0.4` and `168.63.129.16` over TCP port `52014` and `32526`, respectively.  The client (`10.0.0.4`) initiates a connection (SYN), which is acknowledged (SYN+ACK) by the server (`168.63.129.16`). The client then sends an HTTP GET request for `/vmSettings`. The server responds with a 304 Not Modified, followed by the client initiating a graceful connection close (FIN) and the server acknowledging it.  Timestamps are present in the TCP options, allowing RTT calculations. Window scaling is negotiated, and the overall exchange occurs in a very short timeframe (less than 5ms).
+==================================================
+File: packet_patator-multi-cloud-benign2-99419_benign.txt
+Label: Benign
+Description: This network state captures a TCP connection establishment and teardown, including an HTTP GET request for `/docs` on `20.124.208.229:26611` (resolved as IP `10.0.0.4`) initiated by `169.231.183.238:39196`. The exchange involves SYN, SYN-ACK, ACK, data transfer for the HTTP response (HTML content for Swagger UI), and FIN packets for closing the connection.  The initial RTT is around 0.148 seconds. Window scaling is used.  The client (`169.231.183.238`) sends a GET request and receives HTML data for the Swagger UI of the API.
+==================================================
+File: packet_patator-multi-cloud-benign2-59009_benign.txt
+Label: Benign
+Description: This network capture shows a TCP handshake and a brief HTTP GET request, followed by connection termination.
+
+*   **Handshake:** Packets 1-3 establish a TCP connection between 169.231.62.163:50564 (client) and 10.0.0.4:26611 (server).  Packet 1 is the SYN, packet 2 is SYN+ACK, and packet 3 is the ACK.
+*   **HTTP Request:** Packet 4 contains an HTTP GET request from the client (169.231.62.163) for `/docs` on host `20.124.208.229:26611`. The User-Agent is `Python/3.9 aiohttp/3.8.3`.
+*   **HTTP Response:** Packets 6 and 7 carry the HTTP/1.1 200 OK response from the server, including HTML content for the `/docs` endpoint, including HTML content.
+*   **Data Transfer:** After the first data packet (packet 4), the server sends 938 bytes of data in packet 7. The `content-length` value also indicates that the expected length is 938 bytes
+*   **Connection Termination:** Packets 10 and 11 initiate a graceful TCP connection close with FIN flags.  The client initiates the close, and the server acknowledges.
+*   **Timestamps:** RTT values are calculated for some packets.  The analysis data indicates an initial RTT of approximately 75ms.
+*   **Window Scaling:**  TCP options show window scaling is in use.
+*   **Ethernet Addresses:** Traffic flows between MAC addresses `12:34:56:78:9a:bc` and `00:0d:3a:56:47:c7`.  The latter is resolved to Microsoft Corp.
+*   **Push bit:** Notice the Push bit in packets 4,6,7. This means that the sender asked the receiver to push the data that it has buffered to the application layer.
+==================================================
+File: packet_patator-multi-cloud-benign2-113166_benign.txt
+Label: Benign
+Description: This network state captures a TCP handshake and subsequent HTTP GET request for `/docs` from `169.231.183.238:60256` to `10.0.0.4:26611`, followed by the server's HTTP 200 OK response containing HTML content. The client acknowledges the server's response. The initial Round Trip Time (RTT) is measured at approximately 0.14 seconds. The connection is then abruptly reset (RST) by the client after receiving the server's acknowledgment.
+==================================================
+File: packet_patator-multi-cloud-benign2-200496_benign.txt
+Label: Benign
+Description: The network state captures a failed PostgreSQL authentication attempt using SCRAM-SHA-256, followed by a clean TCP connection teardown.  The client (52.81.47.1) initiates a TCP connection to the server (10.0.0.4) on port 5432.  A SASL authentication exchange occurs (packets 6, 8, 10), but ultimately results in a "password authentication failed" error (packet 11) from the server.  Immediately after, the server initiates a FIN (packet 12), and the client responds with its own FIN (packet 13), completing the TCP connection closure.  Window scaling is in use with a scale factor of 128, and timestamps are enabled.  The Microsoft Corp. OUI (00:0d:3a) is associated with the server's MAC address.  The initial RTT is approximately 218ms. The client is attempting to authenticate as the user "postgres" against the database "postgres".
+==================================================
