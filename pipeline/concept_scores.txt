@@ -1,131 +1,1203 @@
---- State Concept Embedding Results ---
+--- Concept Binned Scores (0 to 9) ---
+Total Files Processed: 20
+Total Concepts: 45
 
-State Description 1:
-  Concept Scores (S_cc):
-    - "IP Blocking and Alerting Response Mechanisms": 0.4394
-    - "High Frequency of Failed Login Attempts": 0.4371
-    - "Session-Based Packet Aggregation for Flow Analysis": 0.4506
-    - "TCP Flag Patterns in Failed SSH Connections": 0.5549
-    - "Duration and Byte-Count Anomalies in Brute Force Sessions": 0.4547
-    - "Brute Force Activity on Non-Standard SSH Ports": 0.4389
-    - "Packet Burst Patterns in Attack Windows": 0.4648
-    - "Nonlinear Relationship Between Packet Count and Payload Size": 0.4669
-    - "TCP SYN/ACK Exchange Completion in Failed Logins": 0.6191
-    - "Feature Overfitting Risks When Using Port Numbers": 0.4459
+File: packet_patator-multi-cloud-attack-57497_attack.txt
+  Binned Concept Scores (Concept Index: Bin Index):
+    - "Password Authentication Weakness" (idx 0): 3
+    - "Pre-compiled Username/Password Dictionaries" (idx 1): 1
+    - "Dictionary-based Attack Automation" (idx 2): 3
+    - "SSH Brute Force Patterns" (idx 3): 6
+    - "IP Address-based Attack Correlation" (idx 4): 7
+    - "Account Lockout Mechanisms" (idx 5): 4
+    - "Webcam and Biometric Authentication" (idx 6): 4
+    - "Honeypot-based Attack Observation" (idx 7): 5
+    - "Username/Password Pair Reuse" (idx 8): 5
+    - "Distributed Brute-force Attacks" (idx 9): 4
+    - "Slow-motion Brute-force Strategies" (idx 10): 2
+    - "Flow-based Network Traffic Features" (idx 11): 8
+    - "MQTT Protocol Vulnerability" (idx 12): 5
+    - "Deep Learning for Traffic Classification" (idx 13): 3
+    - "MobileNet-based CNN Detection Model" (idx 14): 0
+    - "Transfer Learning for Intrusion Detection" (idx 15): 4
+    - "Bi-flow and Uni-flow Feature Engineering" (idx 16): 0
+    - "Edge and Fog Computing for IDS" (idx 17): 3
+    - "Context-aware Detection Strategies" (idx 18): 1
+    - "Attack Dictionary Signature Matching" (idx 19): 5
+    - "Resource Constraints in IoT Devices" (idx 20): 4
+    - "False Positives and Detection Precision" (idx 21): 4
+    - "Adversarial Evasion Techniques" (idx 22): 1
+    - "Dynamic Device Configuration Adaptation" (idx 23): 5
+    - "IP Blocking and Alerting Response Mechanisms" (idx 24): 8
+    - "High Frequency of Failed Login Attempts" (idx 25): 8
+    - "SSH Port Targeting Behavior" (idx 26): 8
+    - "Use of Default or Weak Passwords (e.g., “123456”, “admin”)" (idx 27): 2
+    - "Reuse of Precompiled Username/Password Lists" (idx 28): 3
+    - "Session-Based Packet Aggregation for Flow Analysis" (idx 29): 9
+    - "TCP Flag Patterns in Failed SSH Connections" (idx 30): 9
+    - "Detection via Flow-Level Features (not full packet inspection)" (idx 31): 7
+    - "Port Scanning Patterns in Brute Force Attempts" (idx 32): 8
+    - "Source Port Behavior in BFA Traffic" (idx 33): 8
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions" (idx 34): 9
+    - "Brute Force Activity on Non-Standard SSH Ports" (idx 35): 8
+    - "Packet Burst Patterns in Attack Windows" (idx 36): 9
+    - "Session Timing and Connection Persistence Heuristics" (idx 37): 8
+    - "Distribution of Attacks Across Multiple IPs (Distributed BFA)" (idx 38): 6
+    - "Attackers Targeting Professional Servers Over Workstations" (idx 39): 2
+    - "Nonlinear Relationship Between Packet Count and Payload Size" (idx 40): 9
+    - "Flow Repetition with Minor Variation in Credentials" (idx 41): 6
+    - "TCP SYN/ACK Exchange Completion in Failed Logins" (idx 42): 9
+    - "Feature Overfitting Risks When Using Port Numbers" (idx 43): 8
+    - "Categorical Port-Based Tree Splitting Leading to Over-Specialization" (idx 44): 5
 
-State Description 2:
-  Concept Scores (S_cc):
-    - "IP Address-based Attack Correlation": 0.4215
-    - "IP Blocking and Alerting Response Mechanisms": 0.4270
-    - "High Frequency of Failed Login Attempts": 0.4770
-    - "SSH Port Targeting Behavior": 0.4153
-    - "TCP Flag Patterns in Failed SSH Connections": 0.5340
-    - "Port Scanning Patterns in Brute Force Attempts": 0.4299
-    - "Brute Force Activity on Non-Standard SSH Ports": 0.4532
-    - "Packet Burst Patterns in Attack Windows": 0.4199
-    - "Nonlinear Relationship Between Packet Count and Payload Size": 0.4239
-    - "TCP SYN/ACK Exchange Completion in Failed Logins": 0.6051
+  Top 10 Concepts by Raw Score (with their Binned Scores):
+    - "TCP SYN/ACK Exchange Completion in Failed Logins": 9 (Raw Sim: 0.6191)
+    - "TCP Flag Patterns in Failed SSH Connections": 9 (Raw Sim: 0.5549)
+    - "Nonlinear Relationship Between Packet Count and Payload Size": 9 (Raw Sim: 0.4669)
+    - "Packet Burst Patterns in Attack Windows": 9 (Raw Sim: 0.4648)
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions": 9 (Raw Sim: 0.4547)
+    - "Session-Based Packet Aggregation for Flow Analysis": 9 (Raw Sim: 0.4506)
+    - "Feature Overfitting Risks When Using Port Numbers": 8 (Raw Sim: 0.4459)
+    - "IP Blocking and Alerting Response Mechanisms": 8 (Raw Sim: 0.4394)
+    - "Brute Force Activity on Non-Standard SSH Ports": 8 (Raw Sim: 0.4389)
+    - "High Frequency of Failed Login Attempts": 8 (Raw Sim: 0.4371)
 
-State Description 3:
-  Concept Scores (S_cc):
-    - "IP Address-based Attack Correlation": 0.4589
-    - "Flow-based Network Traffic Features": 0.4581
-    - "IP Blocking and Alerting Response Mechanisms": 0.4734
-    - "High Frequency of Failed Login Attempts": 0.4480
-    - "Session-Based Packet Aggregation for Flow Analysis": 0.4648
-    - "TCP Flag Patterns in Failed SSH Connections": 0.5121
-    - "Detection via Flow-Level Features (not full packet inspection)": 0.4706
-    - "Brute Force Activity on Non-Standard SSH Ports": 0.4529
-    - "Nonlinear Relationship Between Packet Count and Payload Size": 0.4453
-    - "TCP SYN/ACK Exchange Completion in Failed Logins": 0.5656
+File: packet_patator-multi-cloud-attack-109371_attack.txt
+  Binned Concept Scores (Concept Index: Bin Index):
+    - "Password Authentication Weakness" (idx 0): 4
+    - "Pre-compiled Username/Password Dictionaries" (idx 1): 0
+    - "Dictionary-based Attack Automation" (idx 2): 1
+    - "SSH Brute Force Patterns" (idx 3): 6
+    - "IP Address-based Attack Correlation" (idx 4): 8
+    - "Account Lockout Mechanisms" (idx 5): 4
+    - "Webcam and Biometric Authentication" (idx 6): 2
+    - "Honeypot-based Attack Observation" (idx 7): 5
+    - "Username/Password Pair Reuse" (idx 8): 5
+    - "Distributed Brute-force Attacks" (idx 9): 5
+    - "Slow-motion Brute-force Strategies" (idx 10): 0
+    - "Flow-based Network Traffic Features" (idx 11): 6
+    - "MQTT Protocol Vulnerability" (idx 12): 7
+    - "Deep Learning for Traffic Classification" (idx 13): 1
+    - "MobileNet-based CNN Detection Model" (idx 14): 0
+    - "Transfer Learning for Intrusion Detection" (idx 15): 3
+    - "Bi-flow and Uni-flow Feature Engineering" (idx 16): 0
+    - "Edge and Fog Computing for IDS" (idx 17): 2
+    - "Context-aware Detection Strategies" (idx 18): 0
+    - "Attack Dictionary Signature Matching" (idx 19): 4
+    - "Resource Constraints in IoT Devices" (idx 20): 2
+    - "False Positives and Detection Precision" (idx 21): 5
+    - "Adversarial Evasion Techniques" (idx 22): 1
+    - "Dynamic Device Configuration Adaptation" (idx 23): 3
+    - "IP Blocking and Alerting Response Mechanisms" (idx 24): 8
+    - "High Frequency of Failed Login Attempts" (idx 25): 9
+    - "SSH Port Targeting Behavior" (idx 26): 7
+    - "Use of Default or Weak Passwords (e.g., “123456”, “admin”)" (idx 27): 4
+    - "Reuse of Precompiled Username/Password Lists" (idx 28): 2
+    - "Session-Based Packet Aggregation for Flow Analysis" (idx 29): 7
+    - "TCP Flag Patterns in Failed SSH Connections" (idx 30): 9
+    - "Detection via Flow-Level Features (not full packet inspection)" (idx 31): 7
+    - "Port Scanning Patterns in Brute Force Attempts" (idx 32): 8
+    - "Source Port Behavior in BFA Traffic" (idx 33): 6
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions" (idx 34): 7
+    - "Brute Force Activity on Non-Standard SSH Ports" (idx 35): 9
+    - "Packet Burst Patterns in Attack Windows" (idx 36): 7
+    - "Session Timing and Connection Persistence Heuristics" (idx 37): 5
+    - "Distribution of Attacks Across Multiple IPs (Distributed BFA)" (idx 38): 6
+    - "Attackers Targeting Professional Servers Over Workstations" (idx 39): 3
+    - "Nonlinear Relationship Between Packet Count and Payload Size" (idx 40): 8
+    - "Flow Repetition with Minor Variation in Credentials" (idx 41): 4
+    - "TCP SYN/ACK Exchange Completion in Failed Logins" (idx 42): 9
+    - "Feature Overfitting Risks When Using Port Numbers" (idx 43): 7
+    - "Categorical Port-Based Tree Splitting Leading to Over-Specialization" (idx 44): 2
 
-State Description 4:
-  Concept Scores (S_cc):
-    - "MQTT Protocol Vulnerability": 0.4115
-    - "High Frequency of Failed Login Attempts": 0.4495
-    - "Session-Based Packet Aggregation for Flow Analysis": 0.4033
-    - "TCP Flag Patterns in Failed SSH Connections": 0.5176
-    - "Port Scanning Patterns in Brute Force Attempts": 0.4032
-    - "Duration and Byte-Count Anomalies in Brute Force Sessions": 0.4338
-    - "Brute Force Activity on Non-Standard SSH Ports": 0.4268
-    - "Packet Burst Patterns in Attack Windows": 0.4246
-    - "Nonlinear Relationship Between Packet Count and Payload Size": 0.4155
-    - "TCP SYN/ACK Exchange Completion in Failed Logins": 0.5927
+  Top 10 Concepts by Raw Score (with their Binned Scores):
+    - "TCP SYN/ACK Exchange Completion in Failed Logins": 9 (Raw Sim: 0.6051)
+    - "TCP Flag Patterns in Failed SSH Connections": 9 (Raw Sim: 0.5340)
+    - "High Frequency of Failed Login Attempts": 9 (Raw Sim: 0.4770)
+    - "Brute Force Activity on Non-Standard SSH Ports": 9 (Raw Sim: 0.4532)
+    - "Port Scanning Patterns in Brute Force Attempts": 8 (Raw Sim: 0.4299)
+    - "IP Blocking and Alerting Response Mechanisms": 8 (Raw Sim: 0.4270)
+    - "Nonlinear Relationship Between Packet Count and Payload Size": 8 (Raw Sim: 0.4239)
+    - "IP Address-based Attack Correlation": 8 (Raw Sim: 0.4215)
+    - "Packet Burst Patterns in Attack Windows": 7 (Raw Sim: 0.4199)
+    - "SSH Port Targeting Behavior": 7 (Raw Sim: 0.4153)
 
-State Description 5:
-  Concept Scores (S_cc):
-    - "SSH Port Targeting Behavior": 0.4446
-    - "Session-Based Packet Aggregation for Flow Analysis": 0.4366
-    - "TCP Flag Patterns in Failed SSH Connections": 0.5128
-    - "Source Port Behavior in BFA Traffic": 0.4212
-    - "Brute Force Activity on Non-Standard SSH Ports": 0.4149
-    - "Packet Burst Patterns in Attack Windows": 0.4748
-    - "Session Timing and Connection Persistence Heuristics": 0.4367
-    - "Nonlinear Relationship Between Packet Count and Payload Size": 0.4401
-    - "TCP SYN/ACK Exchange Completion in Failed Logins": 0.5379
-    - "Feature Overfitting Risks When Using Port Numbers": 0.4235
+File: packet_patator-multi-cloud-attack-78806_attack.txt
+  Binned Concept Scores (Concept Index: Bin Index):
+    - "Password Authentication Weakness" (idx 0): 3
+    - "Pre-compiled Username/Password Dictionaries" (idx 1): 1
+    - "Dictionary-based Attack Automation" (idx 2): 3
+    - "SSH Brute Force Patterns" (idx 3): 6
+    - "IP Address-based Attack Correlation" (idx 4): 8
+    - "Account Lockout Mechanisms" (idx 5): 4
+    - "Webcam and Biometric Authentication" (idx 6): 4
+    - "Honeypot-based Attack Observation" (idx 7): 6
+    - "Username/Password Pair Reuse" (idx 8): 5
+    - "Distributed Brute-force Attacks" (idx 9): 5
+    - "Slow-motion Brute-force Strategies" (idx 10): 2
+    - "Flow-based Network Traffic Features" (idx 11): 8
+    - "MQTT Protocol Vulnerability" (idx 12): 7
+    - "Deep Learning for Traffic Classification" (idx 13): 5
+    - "MobileNet-based CNN Detection Model" (idx 14): 1
+    - "Transfer Learning for Intrusion Detection" (idx 15): 5
+    - "Bi-flow and Uni-flow Feature Engineering" (idx 16): 0
+    - "Edge and Fog Computing for IDS" (idx 17): 4
+    - "Context-aware Detection Strategies" (idx 18): 3
+    - "Attack Dictionary Signature Matching" (idx 19): 6
+    - "Resource Constraints in IoT Devices" (idx 20): 5
+    - "False Positives and Detection Precision" (idx 21): 5
+    - "Adversarial Evasion Techniques" (idx 22): 3
+    - "Dynamic Device Configuration Adaptation" (idx 23): 4
+    - "IP Blocking and Alerting Response Mechanisms" (idx 24): 9
+    - "High Frequency of Failed Login Attempts" (idx 25): 9
+    - "SSH Port Targeting Behavior" (idx 26): 8
+    - "Use of Default or Weak Passwords (e.g., “123456”, “admin”)" (idx 27): 2
+    - "Reuse of Precompiled Username/Password Lists" (idx 28): 3
+    - "Session-Based Packet Aggregation for Flow Analysis" (idx 29): 9
+    - "TCP Flag Patterns in Failed SSH Connections" (idx 30): 9
+    - "Detection via Flow-Level Features (not full packet inspection)" (idx 31): 8
+    - "Port Scanning Patterns in Brute Force Attempts" (idx 32): 7
+    - "Source Port Behavior in BFA Traffic" (idx 33): 8
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions" (idx 34): 8
+    - "Brute Force Activity on Non-Standard SSH Ports" (idx 35): 8
+    - "Packet Burst Patterns in Attack Windows" (idx 36): 9
+    - "Session Timing and Connection Persistence Heuristics" (idx 37): 7
+    - "Distribution of Attacks Across Multiple IPs (Distributed BFA)" (idx 38): 7
+    - "Attackers Targeting Professional Servers Over Workstations" (idx 39): 2
+    - "Nonlinear Relationship Between Packet Count and Payload Size" (idx 40): 9
+    - "Flow Repetition with Minor Variation in Credentials" (idx 41): 6
+    - "TCP SYN/ACK Exchange Completion in Failed Logins" (idx 42): 9
+    - "Feature Overfitting Risks When Using Port Numbers" (idx 43): 8
+    - "Categorical Port-Based Tree Splitting Leading to Over-Specialization" (idx 44): 5
 
-State Description 6:
-  Concept Scores (S_cc):
-    - "IP Blocking and Alerting Response Mechanisms": 0.4398
-    - "High Frequency of Failed Login Attempts": 0.4342
-    - "Session-Based Packet Aggregation for Flow Analysis": 0.4343
-    - "TCP Flag Patterns in Failed SSH Connections": 0.5515
-    - "Duration and Byte-Count Anomalies in Brute Force Sessions": 0.4442
-    - "Brute Force Activity on Non-Standard SSH Ports": 0.4424
-    - "Packet Burst Patterns in Attack Windows": 0.4550
-    - "Nonlinear Relationship Between Packet Count and Payload Size": 0.4596
-    - "TCP SYN/ACK Exchange Completion in Failed Logins": 0.6177
-    - "Feature Overfitting Risks When Using Port Numbers": 0.4471
+  Top 10 Concepts by Raw Score (with their Binned Scores):
+    - "TCP SYN/ACK Exchange Completion in Failed Logins": 9 (Raw Sim: 0.6055)
+    - "TCP Flag Patterns in Failed SSH Connections": 9 (Raw Sim: 0.5205)
+    - "Nonlinear Relationship Between Packet Count and Payload Size": 9 (Raw Sim: 0.4692)
+    - "IP Blocking and Alerting Response Mechanisms": 9 (Raw Sim: 0.4558)
+    - "Session-Based Packet Aggregation for Flow Analysis": 9 (Raw Sim: 0.4547)
+    - "High Frequency of Failed Login Attempts": 9 (Raw Sim: 0.4535)
+    - "Packet Burst Patterns in Attack Windows": 9 (Raw Sim: 0.4488)
+    - "Flow-based Network Traffic Features": 8 (Raw Sim: 0.4439)
+    - "Feature Overfitting Risks When Using Port Numbers": 8 (Raw Sim: 0.4380)
+    - "IP Address-based Attack Correlation": 8 (Raw Sim: 0.4371)
 
-State Description 7:
-  Concept Scores (S_cc):
-    - "IP Address-based Attack Correlation": 0.4195
-    - "Flow-based Network Traffic Features": 0.4212
-    - "IP Blocking and Alerting Response Mechanisms": 0.4321
-    - "High Frequency of Failed Login Attempts": 0.4826
-    - "Session-Based Packet Aggregation for Flow Analysis": 0.4306
-    - "TCP Flag Patterns in Failed SSH Connections": 0.5132
-    - "Detection via Flow-Level Features (not full packet inspection)": 0.4374
-    - "Port Scanning Patterns in Brute Force Attempts": 0.4084
-    - "Brute Force Activity on Non-Standard SSH Ports": 0.4273
-    - "TCP SYN/ACK Exchange Completion in Failed Logins": 0.5956
+File: packet_patator-multi-cloud-attack-3752_attack.txt
+  Binned Concept Scores (Concept Index: Bin Index):
+    - "Password Authentication Weakness" (idx 0): 3
+    - "Pre-compiled Username/Password Dictionaries" (idx 1): 0
+    - "Dictionary-based Attack Automation" (idx 2): 1
+    - "SSH Brute Force Patterns" (idx 3): 6
+    - "IP Address-based Attack Correlation" (idx 4): 6
+    - "Account Lockout Mechanisms" (idx 5): 1
+    - "Webcam and Biometric Authentication" (idx 6): 1
+    - "Honeypot-based Attack Observation" (idx 7): 3
+    - "Username/Password Pair Reuse" (idx 8): 4
+    - "Distributed Brute-force Attacks" (idx 9): 4
+    - "Slow-motion Brute-force Strategies" (idx 10): 1
+    - "Flow-based Network Traffic Features" (idx 11): 5
+    - "MQTT Protocol Vulnerability" (idx 12): 7
+    - "Deep Learning for Traffic Classification" (idx 13): 1
+    - "MobileNet-based CNN Detection Model" (idx 14): 0
+    - "Transfer Learning for Intrusion Detection" (idx 15): 3
+    - "Bi-flow and Uni-flow Feature Engineering" (idx 16): 0
+    - "Edge and Fog Computing for IDS" (idx 17): 1
+    - "Context-aware Detection Strategies" (idx 18): 0
+    - "Attack Dictionary Signature Matching" (idx 19): 3
+    - "Resource Constraints in IoT Devices" (idx 20): 2
+    - "False Positives and Detection Precision" (idx 21): 3
+    - "Adversarial Evasion Techniques" (idx 22): 1
+    - "Dynamic Device Configuration Adaptation" (idx 23): 2
+    - "IP Blocking and Alerting Response Mechanisms" (idx 24): 6
+    - "High Frequency of Failed Login Attempts" (idx 25): 9
+    - "SSH Port Targeting Behavior" (idx 26): 7
+    - "Use of Default or Weak Passwords (e.g., “123456”, “admin”)" (idx 27): 1
+    - "Reuse of Precompiled Username/Password Lists" (idx 28): 1
+    - "Session-Based Packet Aggregation for Flow Analysis" (idx 29): 7
+    - "TCP Flag Patterns in Failed SSH Connections" (idx 30): 9
+    - "Detection via Flow-Level Features (not full packet inspection)" (idx 31): 6
+    - "Port Scanning Patterns in Brute Force Attempts" (idx 32): 7
+    - "Source Port Behavior in BFA Traffic" (idx 33): 6
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions" (idx 34): 8
+    - "Brute Force Activity on Non-Standard SSH Ports" (idx 35): 8
+    - "Packet Burst Patterns in Attack Windows" (idx 36): 8
+    - "Session Timing and Connection Persistence Heuristics" (idx 37): 6
+    - "Distribution of Attacks Across Multiple IPs (Distributed BFA)" (idx 38): 4
+    - "Attackers Targeting Professional Servers Over Workstations" (idx 39): 1
+    - "Nonlinear Relationship Between Packet Count and Payload Size" (idx 40): 7
+    - "Flow Repetition with Minor Variation in Credentials" (idx 41): 3
+    - "TCP SYN/ACK Exchange Completion in Failed Logins" (idx 42): 9
+    - "Feature Overfitting Risks When Using Port Numbers" (idx 43): 6
+    - "Categorical Port-Based Tree Splitting Leading to Over-Specialization" (idx 44): 2
 
-State Description 8:
-  Concept Scores (S_cc):
-    - "Flow-based Network Traffic Features": 0.4458
-    - "IP Blocking and Alerting Response Mechanisms": 0.4391
-    - "SSH Port Targeting Behavior": 0.4182
-    - "Session-Based Packet Aggregation for Flow Analysis": 0.4546
-    - "TCP Flag Patterns in Failed SSH Connections": 0.5184
-    - "Detection via Flow-Level Features (not full packet inspection)": 0.4461
-    - "Packet Burst Patterns in Attack Windows": 0.4111
-    - "Session Timing and Connection Persistence Heuristics": 0.4640
-    - "Nonlinear Relationship Between Packet Count and Payload Size": 0.4271
-    - "TCP SYN/ACK Exchange Completion in Failed Logins": 0.5343
+  Top 10 Concepts by Raw Score (with their Binned Scores):
+    - "TCP SYN/ACK Exchange Completion in Failed Logins": 9 (Raw Sim: 0.5927)
+    - "TCP Flag Patterns in Failed SSH Connections": 9 (Raw Sim: 0.5176)
+    - "High Frequency of Failed Login Attempts": 9 (Raw Sim: 0.4495)
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions": 8 (Raw Sim: 0.4338)
+    - "Brute Force Activity on Non-Standard SSH Ports": 8 (Raw Sim: 0.4268)
+    - "Packet Burst Patterns in Attack Windows": 8 (Raw Sim: 0.4246)
+    - "Nonlinear Relationship Between Packet Count and Payload Size": 7 (Raw Sim: 0.4155)
+    - "MQTT Protocol Vulnerability": 7 (Raw Sim: 0.4115)
+    - "Session-Based Packet Aggregation for Flow Analysis": 7 (Raw Sim: 0.4033)
+    - "Port Scanning Patterns in Brute Force Attempts": 7 (Raw Sim: 0.4032)
 
-State Description 9:
-  Concept Scores (S_cc):
-    - "IP Blocking and Alerting Response Mechanisms": 0.4017
-    - "High Frequency of Failed Login Attempts": 0.4154
-    - "Session-Based Packet Aggregation for Flow Analysis": 0.4119
-    - "TCP Flag Patterns in Failed SSH Connections": 0.5206
-    - "Duration and Byte-Count Anomalies in Brute Force Sessions": 0.4201
-    - "Brute Force Activity on Non-Standard SSH Ports": 0.4059
-    - "Packet Burst Patterns in Attack Windows": 0.4049
-    - "Session Timing and Connection Persistence Heuristics": 0.4026
-    - "Nonlinear Relationship Between Packet Count and Payload Size": 0.4195
-    - "TCP SYN/ACK Exchange Completion in Failed Logins": 0.6171
+File: packet_patator-multi-cloud-attack-126476_attack.txt
+  Binned Concept Scores (Concept Index: Bin Index):
+    - "Password Authentication Weakness" (idx 0): 0
+    - "Pre-compiled Username/Password Dictionaries" (idx 1): 0
+    - "Dictionary-based Attack Automation" (idx 2): 1
+    - "SSH Brute Force Patterns" (idx 3): 3
+    - "IP Address-based Attack Correlation" (idx 4): 6
+    - "Account Lockout Mechanisms" (idx 5): 4
+    - "Webcam and Biometric Authentication" (idx 6): 4
+    - "Honeypot-based Attack Observation" (idx 7): 4
+    - "Username/Password Pair Reuse" (idx 8): 3
+    - "Distributed Brute-force Attacks" (idx 9): 1
+    - "Slow-motion Brute-force Strategies" (idx 10): 1
+    - "Flow-based Network Traffic Features" (idx 11): 7
+    - "MQTT Protocol Vulnerability" (idx 12): 5
+    - "Deep Learning for Traffic Classification" (idx 13): 1
+    - "MobileNet-based CNN Detection Model" (idx 14): 0
+    - "Transfer Learning for Intrusion Detection" (idx 15): 2
+    - "Bi-flow and Uni-flow Feature Engineering" (idx 16): 0
+    - "Edge and Fog Computing for IDS" (idx 17): 3
+    - "Context-aware Detection Strategies" (idx 18): 2
+    - "Attack Dictionary Signature Matching" (idx 19): 4
+    - "Resource Constraints in IoT Devices" (idx 20): 3
+    - "False Positives and Detection Precision" (idx 21): 3
+    - "Adversarial Evasion Techniques" (idx 22): 1
+    - "Dynamic Device Configuration Adaptation" (idx 23): 6
+    - "IP Blocking and Alerting Response Mechanisms" (idx 24): 7
+    - "High Frequency of Failed Login Attempts" (idx 25): 5
+    - "SSH Port Targeting Behavior" (idx 26): 8
+    - "Use of Default or Weak Passwords (e.g., “123456”, “admin”)" (idx 27): 0
+    - "Reuse of Precompiled Username/Password Lists" (idx 28): 2
+    - "Session-Based Packet Aggregation for Flow Analysis" (idx 29): 8
+    - "TCP Flag Patterns in Failed SSH Connections" (idx 30): 9
+    - "Detection via Flow-Level Features (not full packet inspection)" (idx 31): 7
+    - "Port Scanning Patterns in Brute Force Attempts" (idx 32): 7
+    - "Source Port Behavior in BFA Traffic" (idx 33): 8
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions" (idx 34): 7
+    - "Brute Force Activity on Non-Standard SSH Ports" (idx 35): 7
+    - "Packet Burst Patterns in Attack Windows" (idx 36): 9
+    - "Session Timing and Connection Persistence Heuristics" (idx 37): 8
+    - "Distribution of Attacks Across Multiple IPs (Distributed BFA)" (idx 38): 5
+    - "Attackers Targeting Professional Servers Over Workstations" (idx 39): 5
+    - "Nonlinear Relationship Between Packet Count and Payload Size" (idx 40): 8
+    - "Flow Repetition with Minor Variation in Credentials" (idx 41): 4
+    - "TCP SYN/ACK Exchange Completion in Failed Logins" (idx 42): 9
+    - "Feature Overfitting Risks When Using Port Numbers" (idx 43): 8
+    - "Categorical Port-Based Tree Splitting Leading to Over-Specialization" (idx 44): 4
 
-State Description 10:
-  Concept Scores (S_cc):
-    - "IP Blocking and Alerting Response Mechanisms": 0.4221
-    - "Session-Based Packet Aggregation for Flow Analysis": 0.4173
-    - "TCP Flag Patterns in Failed SSH Connections": 0.5155
-    - "Detection via Flow-Level Features (not full packet inspection)": 0.4098
-    - "Brute Force Activity on Non-Standard SSH Ports": 0.4163
-    - "Packet Burst Patterns in Attack Windows": 0.4270
-    - "Session Timing and Connection Persistence Heuristics": 0.4173
-    - "Nonlinear Relationship Between Packet Count and Payload Size": 0.4276
-    - "TCP SYN/ACK Exchange Completion in Failed Logins": 0.5678
-    - "Feature Overfitting Risks When Using Port Numbers": 0.4164
+  Top 10 Concepts by Raw Score (with their Binned Scores):
+    - "TCP SYN/ACK Exchange Completion in Failed Logins": 9 (Raw Sim: 0.5379)
+    - "TCP Flag Patterns in Failed SSH Connections": 9 (Raw Sim: 0.5128)
+    - "Packet Burst Patterns in Attack Windows": 9 (Raw Sim: 0.4748)
+    - "SSH Port Targeting Behavior": 8 (Raw Sim: 0.4446)
+    - "Nonlinear Relationship Between Packet Count and Payload Size": 8 (Raw Sim: 0.4401)
+    - "Session Timing and Connection Persistence Heuristics": 8 (Raw Sim: 0.4367)
+    - "Session-Based Packet Aggregation for Flow Analysis": 8 (Raw Sim: 0.4366)
+    - "Feature Overfitting Risks When Using Port Numbers": 8 (Raw Sim: 0.4235)
+    - "Source Port Behavior in BFA Traffic": 8 (Raw Sim: 0.4212)
+    - "Brute Force Activity on Non-Standard SSH Ports": 7 (Raw Sim: 0.4149)
+
+File: packet_patator-multi-cloud-attack-94399_attack.txt
+  Binned Concept Scores (Concept Index: Bin Index):
+    - "Password Authentication Weakness" (idx 0): 3
+    - "Pre-compiled Username/Password Dictionaries" (idx 1): 0
+    - "Dictionary-based Attack Automation" (idx 2): 3
+    - "SSH Brute Force Patterns" (idx 3): 6
+    - "IP Address-based Attack Correlation" (idx 4): 8
+    - "Account Lockout Mechanisms" (idx 5): 5
+    - "Webcam and Biometric Authentication" (idx 6): 4
+    - "Honeypot-based Attack Observation" (idx 7): 5
+    - "Username/Password Pair Reuse" (idx 8): 5
+    - "Distributed Brute-force Attacks" (idx 9): 5
+    - "Slow-motion Brute-force Strategies" (idx 10): 3
+    - "Flow-based Network Traffic Features" (idx 11): 8
+    - "MQTT Protocol Vulnerability" (idx 12): 6
+    - "Deep Learning for Traffic Classification" (idx 13): 3
+    - "MobileNet-based CNN Detection Model" (idx 14): 0
+    - "Transfer Learning for Intrusion Detection" (idx 15): 3
+    - "Bi-flow and Uni-flow Feature Engineering" (idx 16): 0
+    - "Edge and Fog Computing for IDS" (idx 17): 4
+    - "Context-aware Detection Strategies" (idx 18): 2
+    - "Attack Dictionary Signature Matching" (idx 19): 5
+    - "Resource Constraints in IoT Devices" (idx 20): 5
+    - "False Positives and Detection Precision" (idx 21): 4
+    - "Adversarial Evasion Techniques" (idx 22): 2
+    - "Dynamic Device Configuration Adaptation" (idx 23): 4
+    - "IP Blocking and Alerting Response Mechanisms" (idx 24): 8
+    - "High Frequency of Failed Login Attempts" (idx 25): 8
+    - "SSH Port Targeting Behavior" (idx 26): 8
+    - "Use of Default or Weak Passwords (e.g., “123456”, “admin”)" (idx 27): 2
+    - "Reuse of Precompiled Username/Password Lists" (idx 28): 3
+    - "Session-Based Packet Aggregation for Flow Analysis" (idx 29): 8
+    - "TCP Flag Patterns in Failed SSH Connections" (idx 30): 9
+    - "Detection via Flow-Level Features (not full packet inspection)" (idx 31): 7
+    - "Port Scanning Patterns in Brute Force Attempts" (idx 32): 8
+    - "Source Port Behavior in BFA Traffic" (idx 33): 7
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions" (idx 34): 8
+    - "Brute Force Activity on Non-Standard SSH Ports" (idx 35): 8
+    - "Packet Burst Patterns in Attack Windows" (idx 36): 9
+    - "Session Timing and Connection Persistence Heuristics" (idx 37): 8
+    - "Distribution of Attacks Across Multiple IPs (Distributed BFA)" (idx 38): 6
+    - "Attackers Targeting Professional Servers Over Workstations" (idx 39): 3
+    - "Nonlinear Relationship Between Packet Count and Payload Size" (idx 40): 9
+    - "Flow Repetition with Minor Variation in Credentials" (idx 41): 5
+    - "TCP SYN/ACK Exchange Completion in Failed Logins" (idx 42): 9
+    - "Feature Overfitting Risks When Using Port Numbers" (idx 43): 9
+    - "Categorical Port-Based Tree Splitting Leading to Over-Specialization" (idx 44): 5
+
+  Top 10 Concepts by Raw Score (with their Binned Scores):
+    - "TCP SYN/ACK Exchange Completion in Failed Logins": 9 (Raw Sim: 0.6177)
+    - "TCP Flag Patterns in Failed SSH Connections": 9 (Raw Sim: 0.5515)
+    - "Nonlinear Relationship Between Packet Count and Payload Size": 9 (Raw Sim: 0.4596)
+    - "Packet Burst Patterns in Attack Windows": 9 (Raw Sim: 0.4550)
+    - "Feature Overfitting Risks When Using Port Numbers": 9 (Raw Sim: 0.4471)
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions": 8 (Raw Sim: 0.4442)
+    - "Brute Force Activity on Non-Standard SSH Ports": 8 (Raw Sim: 0.4424)
+    - "IP Blocking and Alerting Response Mechanisms": 8 (Raw Sim: 0.4398)
+    - "Session-Based Packet Aggregation for Flow Analysis": 8 (Raw Sim: 0.4343)
+    - "High Frequency of Failed Login Attempts": 8 (Raw Sim: 0.4342)
+
+File: packet_patator-multi-cloud-attack-37173_attack.txt
+  Binned Concept Scores (Concept Index: Bin Index):
+    - "Password Authentication Weakness" (idx 0): 4
+    - "Pre-compiled Username/Password Dictionaries" (idx 1): 0
+    - "Dictionary-based Attack Automation" (idx 2): 1
+    - "SSH Brute Force Patterns" (idx 3): 6
+    - "IP Address-based Attack Correlation" (idx 4): 7
+    - "Account Lockout Mechanisms" (idx 5): 5
+    - "Webcam and Biometric Authentication" (idx 6): 5
+    - "Honeypot-based Attack Observation" (idx 7): 5
+    - "Username/Password Pair Reuse" (idx 8): 4
+    - "Distributed Brute-force Attacks" (idx 9): 4
+    - "Slow-motion Brute-force Strategies" (idx 10): 2
+    - "Flow-based Network Traffic Features" (idx 11): 8
+    - "MQTT Protocol Vulnerability" (idx 12): 7
+    - "Deep Learning for Traffic Classification" (idx 13): 3
+    - "MobileNet-based CNN Detection Model" (idx 14): 1
+    - "Transfer Learning for Intrusion Detection" (idx 15): 4
+    - "Bi-flow and Uni-flow Feature Engineering" (idx 16): 0
+    - "Edge and Fog Computing for IDS" (idx 17): 3
+    - "Context-aware Detection Strategies" (idx 18): 3
+    - "Attack Dictionary Signature Matching" (idx 19): 4
+    - "Resource Constraints in IoT Devices" (idx 20): 3
+    - "False Positives and Detection Precision" (idx 21): 4
+    - "Adversarial Evasion Techniques" (idx 22): 2
+    - "Dynamic Device Configuration Adaptation" (idx 23): 4
+    - "IP Blocking and Alerting Response Mechanisms" (idx 24): 8
+    - "High Frequency of Failed Login Attempts" (idx 25): 9
+    - "SSH Port Targeting Behavior" (idx 26): 7
+    - "Use of Default or Weak Passwords (e.g., “123456”, “admin”)" (idx 27): 1
+    - "Reuse of Precompiled Username/Password Lists" (idx 28): 2
+    - "Session-Based Packet Aggregation for Flow Analysis" (idx 29): 8
+    - "TCP Flag Patterns in Failed SSH Connections" (idx 30): 9
+    - "Detection via Flow-Level Features (not full packet inspection)" (idx 31): 8
+    - "Port Scanning Patterns in Brute Force Attempts" (idx 32): 7
+    - "Source Port Behavior in BFA Traffic" (idx 33): 6
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions" (idx 34): 7
+    - "Brute Force Activity on Non-Standard SSH Ports" (idx 35): 8
+    - "Packet Burst Patterns in Attack Windows" (idx 36): 7
+    - "Session Timing and Connection Persistence Heuristics" (idx 37): 7
+    - "Distribution of Attacks Across Multiple IPs (Distributed BFA)" (idx 38): 5
+    - "Attackers Targeting Professional Servers Over Workstations" (idx 39): 1
+    - "Nonlinear Relationship Between Packet Count and Payload Size" (idx 40): 6
+    - "Flow Repetition with Minor Variation in Credentials" (idx 41): 5
+    - "TCP SYN/ACK Exchange Completion in Failed Logins" (idx 42): 9
+    - "Feature Overfitting Risks When Using Port Numbers" (idx 43): 6
+    - "Categorical Port-Based Tree Splitting Leading to Over-Specialization" (idx 44): 1
+
+  Top 10 Concepts by Raw Score (with their Binned Scores):
+    - "TCP SYN/ACK Exchange Completion in Failed Logins": 9 (Raw Sim: 0.5956)
+    - "TCP Flag Patterns in Failed SSH Connections": 9 (Raw Sim: 0.5132)
+    - "High Frequency of Failed Login Attempts": 9 (Raw Sim: 0.4826)
+    - "Detection via Flow-Level Features (not full packet inspection)": 8 (Raw Sim: 0.4374)
+    - "IP Blocking and Alerting Response Mechanisms": 8 (Raw Sim: 0.4321)
+    - "Session-Based Packet Aggregation for Flow Analysis": 8 (Raw Sim: 0.4306)
+    - "Brute Force Activity on Non-Standard SSH Ports": 8 (Raw Sim: 0.4273)
+    - "Flow-based Network Traffic Features": 8 (Raw Sim: 0.4212)
+    - "IP Address-based Attack Correlation": 7 (Raw Sim: 0.4195)
+    - "Port Scanning Patterns in Brute Force Attempts": 7 (Raw Sim: 0.4084)
+
+File: packet_patator-multi-cloud-attack-92898_attack.txt
+  Binned Concept Scores (Concept Index: Bin Index):
+    - "Password Authentication Weakness" (idx 0): 0
+    - "Pre-compiled Username/Password Dictionaries" (idx 1): 0
+    - "Dictionary-based Attack Automation" (idx 2): 1
+    - "SSH Brute Force Patterns" (idx 3): 4
+    - "IP Address-based Attack Correlation" (idx 4): 5
+    - "Account Lockout Mechanisms" (idx 5): 3
+    - "Webcam and Biometric Authentication" (idx 6): 3
+    - "Honeypot-based Attack Observation" (idx 7): 5
+    - "Username/Password Pair Reuse" (idx 8): 1
+    - "Distributed Brute-force Attacks" (idx 9): 2
+    - "Slow-motion Brute-force Strategies" (idx 10): 2
+    - "Flow-based Network Traffic Features" (idx 11): 8
+    - "MQTT Protocol Vulnerability" (idx 12): 5
+    - "Deep Learning for Traffic Classification" (idx 13): 4
+    - "MobileNet-based CNN Detection Model" (idx 14): 2
+    - "Transfer Learning for Intrusion Detection" (idx 15): 2
+    - "Bi-flow and Uni-flow Feature Engineering" (idx 16): 1
+    - "Edge and Fog Computing for IDS" (idx 17): 2
+    - "Context-aware Detection Strategies" (idx 18): 5
+    - "Attack Dictionary Signature Matching" (idx 19): 2
+    - "Resource Constraints in IoT Devices" (idx 20): 2
+    - "False Positives and Detection Precision" (idx 21): 2
+    - "Adversarial Evasion Techniques" (idx 22): 1
+    - "Dynamic Device Configuration Adaptation" (idx 23): 5
+    - "IP Blocking and Alerting Response Mechanisms" (idx 24): 8
+    - "High Frequency of Failed Login Attempts" (idx 25): 2
+    - "SSH Port Targeting Behavior" (idx 26): 7
+    - "Use of Default or Weak Passwords (e.g., “123456”, “admin”)" (idx 27): 0
+    - "Reuse of Precompiled Username/Password Lists" (idx 28): 1
+    - "Session-Based Packet Aggregation for Flow Analysis" (idx 29): 9
+    - "TCP Flag Patterns in Failed SSH Connections" (idx 30): 9
+    - "Detection via Flow-Level Features (not full packet inspection)" (idx 31): 8
+    - "Port Scanning Patterns in Brute Force Attempts" (idx 32): 6
+    - "Source Port Behavior in BFA Traffic" (idx 33): 6
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions" (idx 34): 6
+    - "Brute Force Activity on Non-Standard SSH Ports" (idx 35): 7
+    - "Packet Burst Patterns in Attack Windows" (idx 36): 7
+    - "Session Timing and Connection Persistence Heuristics" (idx 37): 9
+    - "Distribution of Attacks Across Multiple IPs (Distributed BFA)" (idx 38): 4
+    - "Attackers Targeting Professional Servers Over Workstations" (idx 39): 0
+    - "Nonlinear Relationship Between Packet Count and Payload Size" (idx 40): 8
+    - "Flow Repetition with Minor Variation in Credentials" (idx 41): 4
+    - "TCP SYN/ACK Exchange Completion in Failed Logins" (idx 42): 9
+    - "Feature Overfitting Risks When Using Port Numbers" (idx 43): 6
+    - "Categorical Port-Based Tree Splitting Leading to Over-Specialization" (idx 44): 2
+
+  Top 10 Concepts by Raw Score (with their Binned Scores):
+    - "TCP SYN/ACK Exchange Completion in Failed Logins": 9 (Raw Sim: 0.5343)
+    - "TCP Flag Patterns in Failed SSH Connections": 9 (Raw Sim: 0.5184)
+    - "Session Timing and Connection Persistence Heuristics": 9 (Raw Sim: 0.4640)
+    - "Session-Based Packet Aggregation for Flow Analysis": 9 (Raw Sim: 0.4546)
+    - "Detection via Flow-Level Features (not full packet inspection)": 8 (Raw Sim: 0.4461)
+    - "Flow-based Network Traffic Features": 8 (Raw Sim: 0.4458)
+    - "IP Blocking and Alerting Response Mechanisms": 8 (Raw Sim: 0.4391)
+    - "Nonlinear Relationship Between Packet Count and Payload Size": 8 (Raw Sim: 0.4271)
+    - "SSH Port Targeting Behavior": 7 (Raw Sim: 0.4182)
+    - "Packet Burst Patterns in Attack Windows": 7 (Raw Sim: 0.4111)
+
+File: packet_patator-multi-cloud-attack-14472_attack.txt
+  Binned Concept Scores (Concept Index: Bin Index):
+    - "Password Authentication Weakness" (idx 0): 2
+    - "Pre-compiled Username/Password Dictionaries" (idx 1): 0
+    - "Dictionary-based Attack Automation" (idx 2): 1
+    - "SSH Brute Force Patterns" (idx 3): 5
+    - "IP Address-based Attack Correlation" (idx 4): 6
+    - "Account Lockout Mechanisms" (idx 5): 3
+    - "Webcam and Biometric Authentication" (idx 6): 3
+    - "Honeypot-based Attack Observation" (idx 7): 4
+    - "Username/Password Pair Reuse" (idx 8): 4
+    - "Distributed Brute-force Attacks" (idx 9): 3
+    - "Slow-motion Brute-force Strategies" (idx 10): 1
+    - "Flow-based Network Traffic Features" (idx 11): 6
+    - "MQTT Protocol Vulnerability" (idx 12): 5
+    - "Deep Learning for Traffic Classification" (idx 13): 2
+    - "MobileNet-based CNN Detection Model" (idx 14): 0
+    - "Transfer Learning for Intrusion Detection" (idx 15): 2
+    - "Bi-flow and Uni-flow Feature Engineering" (idx 16): 0
+    - "Edge and Fog Computing for IDS" (idx 17): 1
+    - "Context-aware Detection Strategies" (idx 18): 0
+    - "Attack Dictionary Signature Matching" (idx 19): 4
+    - "Resource Constraints in IoT Devices" (idx 20): 3
+    - "False Positives and Detection Precision" (idx 21): 4
+    - "Adversarial Evasion Techniques" (idx 22): 1
+    - "Dynamic Device Configuration Adaptation" (idx 23): 3
+    - "IP Blocking and Alerting Response Mechanisms" (idx 24): 7
+    - "High Frequency of Failed Login Attempts" (idx 25): 7
+    - "SSH Port Targeting Behavior" (idx 26): 6
+    - "Use of Default or Weak Passwords (e.g., “123456”, “admin”)" (idx 27): 1
+    - "Reuse of Precompiled Username/Password Lists" (idx 28): 2
+    - "Session-Based Packet Aggregation for Flow Analysis" (idx 29): 7
+    - "TCP Flag Patterns in Failed SSH Connections" (idx 30): 9
+    - "Detection via Flow-Level Features (not full packet inspection)" (idx 31): 5
+    - "Port Scanning Patterns in Brute Force Attempts" (idx 32): 6
+    - "Source Port Behavior in BFA Traffic" (idx 33): 6
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions" (idx 34): 8
+    - "Brute Force Activity on Non-Standard SSH Ports" (idx 35): 7
+    - "Packet Burst Patterns in Attack Windows" (idx 36): 7
+    - "Session Timing and Connection Persistence Heuristics" (idx 37): 7
+    - "Distribution of Attacks Across Multiple IPs (Distributed BFA)" (idx 38): 5
+    - "Attackers Targeting Professional Servers Over Workstations" (idx 39): 1
+    - "Nonlinear Relationship Between Packet Count and Payload Size" (idx 40): 7
+    - "Flow Repetition with Minor Variation in Credentials" (idx 41): 3
+    - "TCP SYN/ACK Exchange Completion in Failed Logins" (idx 42): 9
+    - "Feature Overfitting Risks When Using Port Numbers" (idx 43): 6
+    - "Categorical Port-Based Tree Splitting Leading to Over-Specialization" (idx 44): 2
+
+  Top 10 Concepts by Raw Score (with their Binned Scores):
+    - "TCP SYN/ACK Exchange Completion in Failed Logins": 9 (Raw Sim: 0.6171)
+    - "TCP Flag Patterns in Failed SSH Connections": 9 (Raw Sim: 0.5206)
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions": 8 (Raw Sim: 0.4201)
+    - "Nonlinear Relationship Between Packet Count and Payload Size": 7 (Raw Sim: 0.4195)
+    - "High Frequency of Failed Login Attempts": 7 (Raw Sim: 0.4154)
+    - "Session-Based Packet Aggregation for Flow Analysis": 7 (Raw Sim: 0.4119)
+    - "Brute Force Activity on Non-Standard SSH Ports": 7 (Raw Sim: 0.4059)
+    - "Packet Burst Patterns in Attack Windows": 7 (Raw Sim: 0.4049)
+    - "Session Timing and Connection Persistence Heuristics": 7 (Raw Sim: 0.4026)
+    - "IP Blocking and Alerting Response Mechanisms": 7 (Raw Sim: 0.4017)
+
+File: packet_patator-multi-cloud-attack-98709_attack.txt
+  Binned Concept Scores (Concept Index: Bin Index):
+    - "Password Authentication Weakness" (idx 0): 2
+    - "Pre-compiled Username/Password Dictionaries" (idx 1): 1
+    - "Dictionary-based Attack Automation" (idx 2): 2
+    - "SSH Brute Force Patterns" (idx 3): 4
+    - "IP Address-based Attack Correlation" (idx 4): 6
+    - "Account Lockout Mechanisms" (idx 5): 5
+    - "Webcam and Biometric Authentication" (idx 6): 3
+    - "Honeypot-based Attack Observation" (idx 7): 4
+    - "Username/Password Pair Reuse" (idx 8): 3
+    - "Distributed Brute-force Attacks" (idx 9): 2
+    - "Slow-motion Brute-force Strategies" (idx 10): 1
+    - "Flow-based Network Traffic Features" (idx 11): 7
+    - "MQTT Protocol Vulnerability" (idx 12): 4
+    - "Deep Learning for Traffic Classification" (idx 13): 2
+    - "MobileNet-based CNN Detection Model" (idx 14): 0
+    - "Transfer Learning for Intrusion Detection" (idx 15): 1
+    - "Bi-flow and Uni-flow Feature Engineering" (idx 16): 1
+    - "Edge and Fog Computing for IDS" (idx 17): 1
+    - "Context-aware Detection Strategies" (idx 18): 3
+    - "Attack Dictionary Signature Matching" (idx 19): 5
+    - "Resource Constraints in IoT Devices" (idx 20): 4
+    - "False Positives and Detection Precision" (idx 21): 2
+    - "Adversarial Evasion Techniques" (idx 22): 1
+    - "Dynamic Device Configuration Adaptation" (idx 23): 4
+    - "IP Blocking and Alerting Response Mechanisms" (idx 24): 7
+    - "High Frequency of Failed Login Attempts" (idx 25): 6
+    - "SSH Port Targeting Behavior" (idx 26): 6
+    - "Use of Default or Weak Passwords (e.g., “123456”, “admin”)" (idx 27): 2
+    - "Reuse of Precompiled Username/Password Lists" (idx 28): 2
+    - "Session-Based Packet Aggregation for Flow Analysis" (idx 29): 7
+    - "TCP Flag Patterns in Failed SSH Connections" (idx 30): 9
+    - "Detection via Flow-Level Features (not full packet inspection)" (idx 31): 7
+    - "Port Scanning Patterns in Brute Force Attempts" (idx 32): 6
+    - "Source Port Behavior in BFA Traffic" (idx 33): 6
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions" (idx 34): 7
+    - "Brute Force Activity on Non-Standard SSH Ports" (idx 35): 7
+    - "Packet Burst Patterns in Attack Windows" (idx 36): 7
+    - "Session Timing and Connection Persistence Heuristics" (idx 37): 7
+    - "Distribution of Attacks Across Multiple IPs (Distributed BFA)" (idx 38): 5
+    - "Attackers Targeting Professional Servers Over Workstations" (idx 39): 1
+    - "Nonlinear Relationship Between Packet Count and Payload Size" (idx 40): 7
+    - "Flow Repetition with Minor Variation in Credentials" (idx 41): 5
+    - "TCP SYN/ACK Exchange Completion in Failed Logins" (idx 42): 9
+    - "Feature Overfitting Risks When Using Port Numbers" (idx 43): 7
+    - "Categorical Port-Based Tree Splitting Leading to Over-Specialization" (idx 44): 3
+
+  Top 10 Concepts by Raw Score (with their Binned Scores):
+    - "TCP SYN/ACK Exchange Completion in Failed Logins": 9 (Raw Sim: 0.5534)
+    - "TCP Flag Patterns in Failed SSH Connections": 9 (Raw Sim: 0.5089)
+    - "IP Blocking and Alerting Response Mechanisms": 7 (Raw Sim: 0.4174)
+    - "Nonlinear Relationship Between Packet Count and Payload Size": 7 (Raw Sim: 0.4174)
+    - "Brute Force Activity on Non-Standard SSH Ports": 7 (Raw Sim: 0.4134)
+    - "Session-Based Packet Aggregation for Flow Analysis": 7 (Raw Sim: 0.4133)
+    - "Packet Burst Patterns in Attack Windows": 7 (Raw Sim: 0.4116)
+    - "Feature Overfitting Risks When Using Port Numbers": 7 (Raw Sim: 0.4100)
+    - "Session Timing and Connection Persistence Heuristics": 7 (Raw Sim: 0.4097)
+    - "Detection via Flow-Level Features (not full packet inspection)": 7 (Raw Sim: 0.4077)
+
+File: packet_patator-multi-cloud-benign2-11603_benign.txt
+  Binned Concept Scores (Concept Index: Bin Index):
+    - "Password Authentication Weakness" (idx 0): 0
+    - "Pre-compiled Username/Password Dictionaries" (idx 1): 0
+    - "Dictionary-based Attack Automation" (idx 2): 0
+    - "SSH Brute Force Patterns" (idx 3): 5
+    - "IP Address-based Attack Correlation" (idx 4): 3
+    - "Account Lockout Mechanisms" (idx 5): 0
+    - "Webcam and Biometric Authentication" (idx 6): 1
+    - "Honeypot-based Attack Observation" (idx 7): 4
+    - "Username/Password Pair Reuse" (idx 8): 1
+    - "Distributed Brute-force Attacks" (idx 9): 0
+    - "Slow-motion Brute-force Strategies" (idx 10): 0
+    - "Flow-based Network Traffic Features" (idx 11): 6
+    - "MQTT Protocol Vulnerability" (idx 12): 6
+    - "Deep Learning for Traffic Classification" (idx 13): 1
+    - "MobileNet-based CNN Detection Model" (idx 14): 0
+    - "Transfer Learning for Intrusion Detection" (idx 15): 0
+    - "Bi-flow and Uni-flow Feature Engineering" (idx 16): 0
+    - "Edge and Fog Computing for IDS" (idx 17): 1
+    - "Context-aware Detection Strategies" (idx 18): 2
+    - "Attack Dictionary Signature Matching" (idx 19): 2
+    - "Resource Constraints in IoT Devices" (idx 20): 1
+    - "False Positives and Detection Precision" (idx 21): 0
+    - "Adversarial Evasion Techniques" (idx 22): 0
+    - "Dynamic Device Configuration Adaptation" (idx 23): 4
+    - "IP Blocking and Alerting Response Mechanisms" (idx 24): 4
+    - "High Frequency of Failed Login Attempts" (idx 25): 1
+    - "SSH Port Targeting Behavior" (idx 26): 8
+    - "Use of Default or Weak Passwords (e.g., “123456”, “admin”)" (idx 27): 0
+    - "Reuse of Precompiled Username/Password Lists" (idx 28): 0
+    - "Session-Based Packet Aggregation for Flow Analysis" (idx 29): 8
+    - "TCP Flag Patterns in Failed SSH Connections" (idx 30): 9
+    - "Detection via Flow-Level Features (not full packet inspection)" (idx 31): 6
+    - "Port Scanning Patterns in Brute Force Attempts" (idx 32): 6
+    - "Source Port Behavior in BFA Traffic" (idx 33): 7
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions" (idx 34): 5
+    - "Brute Force Activity on Non-Standard SSH Ports" (idx 35): 7
+    - "Packet Burst Patterns in Attack Windows" (idx 36): 8
+    - "Session Timing and Connection Persistence Heuristics" (idx 37): 7
+    - "Distribution of Attacks Across Multiple IPs (Distributed BFA)" (idx 38): 2
+    - "Attackers Targeting Professional Servers Over Workstations" (idx 39): 0
+    - "Nonlinear Relationship Between Packet Count and Payload Size" (idx 40): 7
+    - "Flow Repetition with Minor Variation in Credentials" (idx 41): 2
+    - "TCP SYN/ACK Exchange Completion in Failed Logins" (idx 42): 9
+    - "Feature Overfitting Risks When Using Port Numbers" (idx 43): 6
+    - "Categorical Port-Based Tree Splitting Leading to Over-Specialization" (idx 44): 1
+
+  Top 10 Concepts by Raw Score (with their Binned Scores):
+    - "TCP SYN/ACK Exchange Completion in Failed Logins": 9 (Raw Sim: 0.5107)
+    - "TCP Flag Patterns in Failed SSH Connections": 9 (Raw Sim: 0.4975)
+    - "Packet Burst Patterns in Attack Windows": 8 (Raw Sim: 0.4368)
+    - "Session-Based Packet Aggregation for Flow Analysis": 8 (Raw Sim: 0.4229)
+    - "SSH Port Targeting Behavior": 8 (Raw Sim: 0.4200)
+    - "Nonlinear Relationship Between Packet Count and Payload Size": 7 (Raw Sim: 0.4141)
+    - "Session Timing and Connection Persistence Heuristics": 7 (Raw Sim: 0.4079)
+    - "Source Port Behavior in BFA Traffic": 7 (Raw Sim: 0.4019)
+    - "Brute Force Activity on Non-Standard SSH Ports": 7 (Raw Sim: 0.4007)
+    - "Flow-based Network Traffic Features": 6 (Raw Sim: 0.3940)
+
+File: packet_patator-multi-cloud-benign2-0910_benign.txt
+  Binned Concept Scores (Concept Index: Bin Index):
+    - "Password Authentication Weakness" (idx 0): 0
+    - "Pre-compiled Username/Password Dictionaries" (idx 1): 0
+    - "Dictionary-based Attack Automation" (idx 2): 3
+    - "SSH Brute Force Patterns" (idx 3): 5
+    - "IP Address-based Attack Correlation" (idx 4): 6
+    - "Account Lockout Mechanisms" (idx 5): 2
+    - "Webcam and Biometric Authentication" (idx 6): 1
+    - "Honeypot-based Attack Observation" (idx 7): 5
+    - "Username/Password Pair Reuse" (idx 8): 3
+    - "Distributed Brute-force Attacks" (idx 9): 3
+    - "Slow-motion Brute-force Strategies" (idx 10): 3
+    - "Flow-based Network Traffic Features" (idx 11): 7
+    - "MQTT Protocol Vulnerability" (idx 12): 4
+    - "Deep Learning for Traffic Classification" (idx 13): 4
+    - "MobileNet-based CNN Detection Model" (idx 14): 0
+    - "Transfer Learning for Intrusion Detection" (idx 15): 3
+    - "Bi-flow and Uni-flow Feature Engineering" (idx 16): 1
+    - "Edge and Fog Computing for IDS" (idx 17): 2
+    - "Context-aware Detection Strategies" (idx 18): 2
+    - "Attack Dictionary Signature Matching" (idx 19): 5
+    - "Resource Constraints in IoT Devices" (idx 20): 4
+    - "False Positives and Detection Precision" (idx 21): 2
+    - "Adversarial Evasion Techniques" (idx 22): 1
+    - "Dynamic Device Configuration Adaptation" (idx 23): 5
+    - "IP Blocking and Alerting Response Mechanisms" (idx 24): 6
+    - "High Frequency of Failed Login Attempts" (idx 25): 5
+    - "SSH Port Targeting Behavior" (idx 26): 8
+    - "Use of Default or Weak Passwords (e.g., “123456”, “admin”)" (idx 27): 0
+    - "Reuse of Precompiled Username/Password Lists" (idx 28): 2
+    - "Session-Based Packet Aggregation for Flow Analysis" (idx 29): 9
+    - "TCP Flag Patterns in Failed SSH Connections" (idx 30): 9
+    - "Detection via Flow-Level Features (not full packet inspection)" (idx 31): 7
+    - "Port Scanning Patterns in Brute Force Attempts" (idx 32): 7
+    - "Source Port Behavior in BFA Traffic" (idx 33): 7
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions" (idx 34): 8
+    - "Brute Force Activity on Non-Standard SSH Ports" (idx 35): 7
+    - "Packet Burst Patterns in Attack Windows" (idx 36): 9
+    - "Session Timing and Connection Persistence Heuristics" (idx 37): 7
+    - "Distribution of Attacks Across Multiple IPs (Distributed BFA)" (idx 38): 5
+    - "Attackers Targeting Professional Servers Over Workstations" (idx 39): 1
+    - "Nonlinear Relationship Between Packet Count and Payload Size" (idx 40): 9
+    - "Flow Repetition with Minor Variation in Credentials" (idx 41): 5
+    - "TCP SYN/ACK Exchange Completion in Failed Logins" (idx 42): 9
+    - "Feature Overfitting Risks When Using Port Numbers" (idx 43): 8
+    - "Categorical Port-Based Tree Splitting Leading to Over-Specialization" (idx 44): 5
+
+  Top 10 Concepts by Raw Score (with their Binned Scores):
+    - "TCP SYN/ACK Exchange Completion in Failed Logins": 9 (Raw Sim: 0.5449)
+    - "TCP Flag Patterns in Failed SSH Connections": 9 (Raw Sim: 0.5125)
+    - "Nonlinear Relationship Between Packet Count and Payload Size": 9 (Raw Sim: 0.4885)
+    - "Packet Burst Patterns in Attack Windows": 9 (Raw Sim: 0.4751)
+    - "Session-Based Packet Aggregation for Flow Analysis": 9 (Raw Sim: 0.4541)
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions": 8 (Raw Sim: 0.4379)
+    - "SSH Port Targeting Behavior": 8 (Raw Sim: 0.4299)
+    - "Feature Overfitting Risks When Using Port Numbers": 8 (Raw Sim: 0.4294)
+    - "Flow-based Network Traffic Features": 7 (Raw Sim: 0.4194)
+    - "Session Timing and Connection Persistence Heuristics": 7 (Raw Sim: 0.4171)
+
+File: packet_patator-multi-cloud-benign2-195329_benign.txt
+  Binned Concept Scores (Concept Index: Bin Index):
+    - "Password Authentication Weakness" (idx 0): 6
+    - "Pre-compiled Username/Password Dictionaries" (idx 1): 3
+    - "Dictionary-based Attack Automation" (idx 2): 3
+    - "SSH Brute Force Patterns" (idx 3): 8
+    - "IP Address-based Attack Correlation" (idx 4): 8
+    - "Account Lockout Mechanisms" (idx 5): 5
+    - "Webcam and Biometric Authentication" (idx 6): 6
+    - "Honeypot-based Attack Observation" (idx 7): 5
+    - "Username/Password Pair Reuse" (idx 8): 5
+    - "Distributed Brute-force Attacks" (idx 9): 6
+    - "Slow-motion Brute-force Strategies" (idx 10): 2
+    - "Flow-based Network Traffic Features" (idx 11): 8
+    - "MQTT Protocol Vulnerability" (idx 12): 6
+    - "Deep Learning for Traffic Classification" (idx 13): 3
+    - "MobileNet-based CNN Detection Model" (idx 14): 0
+    - "Transfer Learning for Intrusion Detection" (idx 15): 4
+    - "Bi-flow and Uni-flow Feature Engineering" (idx 16): 0
+    - "Edge and Fog Computing for IDS" (idx 17): 3
+    - "Context-aware Detection Strategies" (idx 18): 2
+    - "Attack Dictionary Signature Matching" (idx 19): 6
+    - "Resource Constraints in IoT Devices" (idx 20): 1
+    - "False Positives and Detection Precision" (idx 21): 5
+    - "Adversarial Evasion Techniques" (idx 22): 3
+    - "Dynamic Device Configuration Adaptation" (idx 23): 3
+    - "IP Blocking and Alerting Response Mechanisms" (idx 24): 8
+    - "High Frequency of Failed Login Attempts" (idx 25): 9
+    - "SSH Port Targeting Behavior" (idx 26): 9
+    - "Use of Default or Weak Passwords (e.g., “123456”, “admin”)" (idx 27): 4
+    - "Reuse of Precompiled Username/Password Lists" (idx 28): 4
+    - "Session-Based Packet Aggregation for Flow Analysis" (idx 29): 9
+    - "TCP Flag Patterns in Failed SSH Connections" (idx 30): 9
+    - "Detection via Flow-Level Features (not full packet inspection)" (idx 31): 9
+    - "Port Scanning Patterns in Brute Force Attempts" (idx 32): 9
+    - "Source Port Behavior in BFA Traffic" (idx 33): 8
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions" (idx 34): 9
+    - "Brute Force Activity on Non-Standard SSH Ports" (idx 35): 9
+    - "Packet Burst Patterns in Attack Windows" (idx 36): 8
+    - "Session Timing and Connection Persistence Heuristics" (idx 37): 6
+    - "Distribution of Attacks Across Multiple IPs (Distributed BFA)" (idx 38): 6
+    - "Attackers Targeting Professional Servers Over Workstations" (idx 39): 4
+    - "Nonlinear Relationship Between Packet Count and Payload Size" (idx 40): 8
+    - "Flow Repetition with Minor Variation in Credentials" (idx 41): 5
+    - "TCP SYN/ACK Exchange Completion in Failed Logins" (idx 42): 9
+    - "Feature Overfitting Risks When Using Port Numbers" (idx 43): 8
+    - "Categorical Port-Based Tree Splitting Leading to Over-Specialization" (idx 44): 3
+
+  Top 10 Concepts by Raw Score (with their Binned Scores):
+    - "TCP SYN/ACK Exchange Completion in Failed Logins": 9 (Raw Sim: 0.5810)
+    - "TCP Flag Patterns in Failed SSH Connections": 9 (Raw Sim: 0.5659)
+    - "Brute Force Activity on Non-Standard SSH Ports": 9 (Raw Sim: 0.5159)
+    - "Detection via Flow-Level Features (not full packet inspection)": 9 (Raw Sim: 0.4659)
+    - "SSH Port Targeting Behavior": 9 (Raw Sim: 0.4580)
+    - "Port Scanning Patterns in Brute Force Attempts": 9 (Raw Sim: 0.4572)
+    - "Session-Based Packet Aggregation for Flow Analysis": 9 (Raw Sim: 0.4561)
+    - "High Frequency of Failed Login Attempts": 9 (Raw Sim: 0.4535)
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions": 9 (Raw Sim: 0.4469)
+    - "Packet Burst Patterns in Attack Windows": 8 (Raw Sim: 0.4467)
+
+File: packet_patator-multi-cloud-benign2-193503_benign.txt
+  Binned Concept Scores (Concept Index: Bin Index):
+    - "Password Authentication Weakness" (idx 0): 5
+    - "Pre-compiled Username/Password Dictionaries" (idx 1): 1
+    - "Dictionary-based Attack Automation" (idx 2): 1
+    - "SSH Brute Force Patterns" (idx 3): 7
+    - "IP Address-based Attack Correlation" (idx 4): 6
+    - "Account Lockout Mechanisms" (idx 5): 4
+    - "Webcam and Biometric Authentication" (idx 6): 4
+    - "Honeypot-based Attack Observation" (idx 7): 4
+    - "Username/Password Pair Reuse" (idx 8): 4
+    - "Distributed Brute-force Attacks" (idx 9): 4
+    - "Slow-motion Brute-force Strategies" (idx 10): 2
+    - "Flow-based Network Traffic Features" (idx 11): 8
+    - "MQTT Protocol Vulnerability" (idx 12): 4
+    - "Deep Learning for Traffic Classification" (idx 13): 4
+    - "MobileNet-based CNN Detection Model" (idx 14): 0
+    - "Transfer Learning for Intrusion Detection" (idx 15): 5
+    - "Bi-flow and Uni-flow Feature Engineering" (idx 16): 0
+    - "Edge and Fog Computing for IDS" (idx 17): 3
+    - "Context-aware Detection Strategies" (idx 18): 1
+    - "Attack Dictionary Signature Matching" (idx 19): 5
+    - "Resource Constraints in IoT Devices" (idx 20): 2
+    - "False Positives and Detection Precision" (idx 21): 5
+    - "Adversarial Evasion Techniques" (idx 22): 2
+    - "Dynamic Device Configuration Adaptation" (idx 23): 3
+    - "IP Blocking and Alerting Response Mechanisms" (idx 24): 7
+    - "High Frequency of Failed Login Attempts" (idx 25): 9
+    - "SSH Port Targeting Behavior" (idx 26): 8
+    - "Use of Default or Weak Passwords (e.g., “123456”, “admin”)" (idx 27): 2
+    - "Reuse of Precompiled Username/Password Lists" (idx 28): 2
+    - "Session-Based Packet Aggregation for Flow Analysis" (idx 29): 8
+    - "TCP Flag Patterns in Failed SSH Connections" (idx 30): 9
+    - "Detection via Flow-Level Features (not full packet inspection)" (idx 31): 8
+    - "Port Scanning Patterns in Brute Force Attempts" (idx 32): 7
+    - "Source Port Behavior in BFA Traffic" (idx 33): 8
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions" (idx 34): 8
+    - "Brute Force Activity on Non-Standard SSH Ports" (idx 35): 9
+    - "Packet Burst Patterns in Attack Windows" (idx 36): 9
+    - "Session Timing and Connection Persistence Heuristics" (idx 37): 7
+    - "Distribution of Attacks Across Multiple IPs (Distributed BFA)" (idx 38): 5
+    - "Attackers Targeting Professional Servers Over Workstations" (idx 39): 2
+    - "Nonlinear Relationship Between Packet Count and Payload Size" (idx 40): 9
+    - "Flow Repetition with Minor Variation in Credentials" (idx 41): 5
+    - "TCP SYN/ACK Exchange Completion in Failed Logins" (idx 42): 9
+    - "Feature Overfitting Risks When Using Port Numbers" (idx 43): 8
+    - "Categorical Port-Based Tree Splitting Leading to Over-Specialization" (idx 44): 4
+
+  Top 10 Concepts by Raw Score (with their Binned Scores):
+    - "TCP SYN/ACK Exchange Completion in Failed Logins": 9 (Raw Sim: 0.5841)
+    - "TCP Flag Patterns in Failed SSH Connections": 9 (Raw Sim: 0.5294)
+    - "Packet Burst Patterns in Attack Windows": 9 (Raw Sim: 0.4700)
+    - "High Frequency of Failed Login Attempts": 9 (Raw Sim: 0.4624)
+    - "Nonlinear Relationship Between Packet Count and Payload Size": 9 (Raw Sim: 0.4581)
+    - "Brute Force Activity on Non-Standard SSH Ports": 9 (Raw Sim: 0.4516)
+    - "Session-Based Packet Aggregation for Flow Analysis": 8 (Raw Sim: 0.4369)
+    - "SSH Port Targeting Behavior": 8 (Raw Sim: 0.4357)
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions": 8 (Raw Sim: 0.4337)
+    - "Flow-based Network Traffic Features": 8 (Raw Sim: 0.4328)
+
+File: packet_patator-multi-cloud-benign2-8582_benign.txt
+  Binned Concept Scores (Concept Index: Bin Index):
+    - "Password Authentication Weakness" (idx 0): 0
+    - "Pre-compiled Username/Password Dictionaries" (idx 1): 0
+    - "Dictionary-based Attack Automation" (idx 2): 3
+    - "SSH Brute Force Patterns" (idx 3): 5
+    - "IP Address-based Attack Correlation" (idx 4): 6
+    - "Account Lockout Mechanisms" (idx 5): 2
+    - "Webcam and Biometric Authentication" (idx 6): 2
+    - "Honeypot-based Attack Observation" (idx 7): 5
+    - "Username/Password Pair Reuse" (idx 8): 1
+    - "Distributed Brute-force Attacks" (idx 9): 3
+    - "Slow-motion Brute-force Strategies" (idx 10): 2
+    - "Flow-based Network Traffic Features" (idx 11): 8
+    - "MQTT Protocol Vulnerability" (idx 12): 5
+    - "Deep Learning for Traffic Classification" (idx 13): 3
+    - "MobileNet-based CNN Detection Model" (idx 14): 0
+    - "Transfer Learning for Intrusion Detection" (idx 15): 2
+    - "Bi-flow and Uni-flow Feature Engineering" (idx 16): 2
+    - "Edge and Fog Computing for IDS" (idx 17): 3
+    - "Context-aware Detection Strategies" (idx 18): 4
+    - "Attack Dictionary Signature Matching" (idx 19): 4
+    - "Resource Constraints in IoT Devices" (idx 20): 2
+    - "False Positives and Detection Precision" (idx 21): 2
+    - "Adversarial Evasion Techniques" (idx 22): 2
+    - "Dynamic Device Configuration Adaptation" (idx 23): 4
+    - "IP Blocking and Alerting Response Mechanisms" (idx 24): 7
+    - "High Frequency of Failed Login Attempts" (idx 25): 4
+    - "SSH Port Targeting Behavior" (idx 26): 8
+    - "Use of Default or Weak Passwords (e.g., “123456”, “admin”)" (idx 27): 0
+    - "Reuse of Precompiled Username/Password Lists" (idx 28): 0
+    - "Session-Based Packet Aggregation for Flow Analysis" (idx 29): 9
+    - "TCP Flag Patterns in Failed SSH Connections" (idx 30): 9
+    - "Detection via Flow-Level Features (not full packet inspection)" (idx 31): 8
+    - "Port Scanning Patterns in Brute Force Attempts" (idx 32): 6
+    - "Source Port Behavior in BFA Traffic" (idx 33): 6
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions" (idx 34): 6
+    - "Brute Force Activity on Non-Standard SSH Ports" (idx 35): 7
+    - "Packet Burst Patterns in Attack Windows" (idx 36): 8
+    - "Session Timing and Connection Persistence Heuristics" (idx 37): 6
+    - "Distribution of Attacks Across Multiple IPs (Distributed BFA)" (idx 38): 5
+    - "Attackers Targeting Professional Servers Over Workstations" (idx 39): 1
+    - "Nonlinear Relationship Between Packet Count and Payload Size" (idx 40): 9
+    - "Flow Repetition with Minor Variation in Credentials" (idx 41): 5
+    - "TCP SYN/ACK Exchange Completion in Failed Logins" (idx 42): 9
+    - "Feature Overfitting Risks When Using Port Numbers" (idx 43): 6
+    - "Categorical Port-Based Tree Splitting Leading to Over-Specialization" (idx 44): 2
+
+  Top 10 Concepts by Raw Score (with their Binned Scores):
+    - "TCP SYN/ACK Exchange Completion in Failed Logins": 9 (Raw Sim: 0.5116)
+    - "TCP Flag Patterns in Failed SSH Connections": 9 (Raw Sim: 0.4972)
+    - "Session-Based Packet Aggregation for Flow Analysis": 9 (Raw Sim: 0.4503)
+    - "Nonlinear Relationship Between Packet Count and Payload Size": 9 (Raw Sim: 0.4469)
+    - "Packet Burst Patterns in Attack Windows": 8 (Raw Sim: 0.4411)
+    - "Detection via Flow-Level Features (not full packet inspection)": 8 (Raw Sim: 0.4341)
+    - "Flow-based Network Traffic Features": 8 (Raw Sim: 0.4258)
+    - "SSH Port Targeting Behavior": 8 (Raw Sim: 0.4249)
+    - "IP Blocking and Alerting Response Mechanisms": 7 (Raw Sim: 0.4137)
+    - "Brute Force Activity on Non-Standard SSH Ports": 7 (Raw Sim: 0.4103)
+
+File: packet_patator-multi-cloud-benign2-228357_benign.txt
+  Binned Concept Scores (Concept Index: Bin Index):
+    - "Password Authentication Weakness" (idx 0): 0
+    - "Pre-compiled Username/Password Dictionaries" (idx 1): 0
+    - "Dictionary-based Attack Automation" (idx 2): 0
+    - "SSH Brute Force Patterns" (idx 3): 2
+    - "IP Address-based Attack Correlation" (idx 4): 6
+    - "Account Lockout Mechanisms" (idx 5): 1
+    - "Webcam and Biometric Authentication" (idx 6): 1
+    - "Honeypot-based Attack Observation" (idx 7): 4
+    - "Username/Password Pair Reuse" (idx 8): 1
+    - "Distributed Brute-force Attacks" (idx 9): 0
+    - "Slow-motion Brute-force Strategies" (idx 10): 1
+    - "Flow-based Network Traffic Features" (idx 11): 7
+    - "MQTT Protocol Vulnerability" (idx 12): 5
+    - "Deep Learning for Traffic Classification" (idx 13): 2
+    - "MobileNet-based CNN Detection Model" (idx 14): 0
+    - "Transfer Learning for Intrusion Detection" (idx 15): 1
+    - "Bi-flow and Uni-flow Feature Engineering" (idx 16): 0
+    - "Edge and Fog Computing for IDS" (idx 17): 2
+    - "Context-aware Detection Strategies" (idx 18): 1
+    - "Attack Dictionary Signature Matching" (idx 19): 2
+    - "Resource Constraints in IoT Devices" (idx 20): 3
+    - "False Positives and Detection Precision" (idx 21): 1
+    - "Adversarial Evasion Techniques" (idx 22): 0
+    - "Dynamic Device Configuration Adaptation" (idx 23): 5
+    - "IP Blocking and Alerting Response Mechanisms" (idx 24): 6
+    - "High Frequency of Failed Login Attempts" (idx 25): 4
+    - "SSH Port Targeting Behavior" (idx 26): 8
+    - "Use of Default or Weak Passwords (e.g., “123456”, “admin”)" (idx 27): 0
+    - "Reuse of Precompiled Username/Password Lists" (idx 28): 0
+    - "Session-Based Packet Aggregation for Flow Analysis" (idx 29): 8
+    - "TCP Flag Patterns in Failed SSH Connections" (idx 30): 9
+    - "Detection via Flow-Level Features (not full packet inspection)" (idx 31): 6
+    - "Port Scanning Patterns in Brute Force Attempts" (idx 32): 6
+    - "Source Port Behavior in BFA Traffic" (idx 33): 7
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions" (idx 34): 6
+    - "Brute Force Activity on Non-Standard SSH Ports" (idx 35): 6
+    - "Packet Burst Patterns in Attack Windows" (idx 36): 9
+    - "Session Timing and Connection Persistence Heuristics" (idx 37): 8
+    - "Distribution of Attacks Across Multiple IPs (Distributed BFA)" (idx 38): 4
+    - "Attackers Targeting Professional Servers Over Workstations" (idx 39): 2
+    - "Nonlinear Relationship Between Packet Count and Payload Size" (idx 40): 8
+    - "Flow Repetition with Minor Variation in Credentials" (idx 41): 2
+    - "TCP SYN/ACK Exchange Completion in Failed Logins" (idx 42): 9
+    - "Feature Overfitting Risks When Using Port Numbers" (idx 43): 7
+    - "Categorical Port-Based Tree Splitting Leading to Over-Specialization" (idx 44): 3
+
+  Top 10 Concepts by Raw Score (with their Binned Scores):
+    - "TCP SYN/ACK Exchange Completion in Failed Logins": 9 (Raw Sim: 0.5235)
+    - "TCP Flag Patterns in Failed SSH Connections": 9 (Raw Sim: 0.4829)
+    - "Packet Burst Patterns in Attack Windows": 9 (Raw Sim: 0.4620)
+    - "Nonlinear Relationship Between Packet Count and Payload Size": 8 (Raw Sim: 0.4434)
+    - "Session Timing and Connection Persistence Heuristics": 8 (Raw Sim: 0.4426)
+    - "Session-Based Packet Aggregation for Flow Analysis": 8 (Raw Sim: 0.4340)
+    - "SSH Port Targeting Behavior": 8 (Raw Sim: 0.4282)
+    - "Source Port Behavior in BFA Traffic": 7 (Raw Sim: 0.4151)
+    - "Feature Overfitting Risks When Using Port Numbers": 7 (Raw Sim: 0.4145)
+    - "Flow-based Network Traffic Features": 7 (Raw Sim: 0.4086)
+
+File: packet_patator-multi-cloud-benign2-99419_benign.txt
+  Binned Concept Scores (Concept Index: Bin Index):
+    - "Password Authentication Weakness" (idx 0): 0
+    - "Pre-compiled Username/Password Dictionaries" (idx 1): 0
+    - "Dictionary-based Attack Automation" (idx 2): 1
+    - "SSH Brute Force Patterns" (idx 3): 4
+    - "IP Address-based Attack Correlation" (idx 4): 5
+    - "Account Lockout Mechanisms" (idx 5): 0
+    - "Webcam and Biometric Authentication" (idx 6): 1
+    - "Honeypot-based Attack Observation" (idx 7): 4
+    - "Username/Password Pair Reuse" (idx 8): 0
+    - "Distributed Brute-force Attacks" (idx 9): 2
+    - "Slow-motion Brute-force Strategies" (idx 10): 0
+    - "Flow-based Network Traffic Features" (idx 11): 7
+    - "MQTT Protocol Vulnerability" (idx 12): 5
+    - "Deep Learning for Traffic Classification" (idx 13): 2
+    - "MobileNet-based CNN Detection Model" (idx 14): 0
+    - "Transfer Learning for Intrusion Detection" (idx 15): 1
+    - "Bi-flow and Uni-flow Feature Engineering" (idx 16): 0
+    - "Edge and Fog Computing for IDS" (idx 17): 3
+    - "Context-aware Detection Strategies" (idx 18): 1
+    - "Attack Dictionary Signature Matching" (idx 19): 3
+    - "Resource Constraints in IoT Devices" (idx 20): 3
+    - "False Positives and Detection Precision" (idx 21): 2
+    - "Adversarial Evasion Techniques" (idx 22): 0
+    - "Dynamic Device Configuration Adaptation" (idx 23): 4
+    - "IP Blocking and Alerting Response Mechanisms" (idx 24): 7
+    - "High Frequency of Failed Login Attempts" (idx 25): 3
+    - "SSH Port Targeting Behavior" (idx 26): 7
+    - "Use of Default or Weak Passwords (e.g., “123456”, “admin”)" (idx 27): 0
+    - "Reuse of Precompiled Username/Password Lists" (idx 28): 0
+    - "Session-Based Packet Aggregation for Flow Analysis" (idx 29): 8
+    - "TCP Flag Patterns in Failed SSH Connections" (idx 30): 9
+    - "Detection via Flow-Level Features (not full packet inspection)" (idx 31): 6
+    - "Port Scanning Patterns in Brute Force Attempts" (idx 32): 5
+    - "Source Port Behavior in BFA Traffic" (idx 33): 6
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions" (idx 34): 6
+    - "Brute Force Activity on Non-Standard SSH Ports" (idx 35): 6
+    - "Packet Burst Patterns in Attack Windows" (idx 36): 8
+    - "Session Timing and Connection Persistence Heuristics" (idx 37): 6
+    - "Distribution of Attacks Across Multiple IPs (Distributed BFA)" (idx 38): 4
+    - "Attackers Targeting Professional Servers Over Workstations" (idx 39): 0
+    - "Nonlinear Relationship Between Packet Count and Payload Size" (idx 40): 9
+    - "Flow Repetition with Minor Variation in Credentials" (idx 41): 3
+    - "TCP SYN/ACK Exchange Completion in Failed Logins" (idx 42): 9
+    - "Feature Overfitting Risks When Using Port Numbers" (idx 43): 6
+    - "Categorical Port-Based Tree Splitting Leading to Over-Specialization" (idx 44): 3
+
+  Top 10 Concepts by Raw Score (with their Binned Scores):
+    - "TCP SYN/ACK Exchange Completion in Failed Logins": 9 (Raw Sim: 0.5187)
+    - "TCP Flag Patterns in Failed SSH Connections": 9 (Raw Sim: 0.4649)
+    - "Nonlinear Relationship Between Packet Count and Payload Size": 9 (Raw Sim: 0.4470)
+    - "Packet Burst Patterns in Attack Windows": 8 (Raw Sim: 0.4466)
+    - "Session-Based Packet Aggregation for Flow Analysis": 8 (Raw Sim: 0.4265)
+    - "SSH Port Targeting Behavior": 7 (Raw Sim: 0.4116)
+    - "Flow-based Network Traffic Features": 7 (Raw Sim: 0.4104)
+    - "IP Blocking and Alerting Response Mechanisms": 7 (Raw Sim: 0.4097)
+    - "Feature Overfitting Risks When Using Port Numbers": 6 (Raw Sim: 0.3991)
+    - "Source Port Behavior in BFA Traffic": 6 (Raw Sim: 0.3984)
+
+File: packet_patator-multi-cloud-benign2-59009_benign.txt
+  Binned Concept Scores (Concept Index: Bin Index):
+    - "Password Authentication Weakness" (idx 0): 0
+    - "Pre-compiled Username/Password Dictionaries" (idx 1): 0
+    - "Dictionary-based Attack Automation" (idx 2): 4
+    - "SSH Brute Force Patterns" (idx 3): 5
+    - "IP Address-based Attack Correlation" (idx 4): 6
+    - "Account Lockout Mechanisms" (idx 5): 2
+    - "Webcam and Biometric Authentication" (idx 6): 1
+    - "Honeypot-based Attack Observation" (idx 7): 4
+    - "Username/Password Pair Reuse" (idx 8): 1
+    - "Distributed Brute-force Attacks" (idx 9): 4
+    - "Slow-motion Brute-force Strategies" (idx 10): 3
+    - "Flow-based Network Traffic Features" (idx 11): 8
+    - "MQTT Protocol Vulnerability" (idx 12): 3
+    - "Deep Learning for Traffic Classification" (idx 13): 2
+    - "MobileNet-based CNN Detection Model" (idx 14): 1
+    - "Transfer Learning for Intrusion Detection" (idx 15): 3
+    - "Bi-flow and Uni-flow Feature Engineering" (idx 16): 2
+    - "Edge and Fog Computing for IDS" (idx 17): 1
+    - "Context-aware Detection Strategies" (idx 18): 3
+    - "Attack Dictionary Signature Matching" (idx 19): 5
+    - "Resource Constraints in IoT Devices" (idx 20): 3
+    - "False Positives and Detection Precision" (idx 21): 2
+    - "Adversarial Evasion Techniques" (idx 22): 1
+    - "Dynamic Device Configuration Adaptation" (idx 23): 4
+    - "IP Blocking and Alerting Response Mechanisms" (idx 24): 6
+    - "High Frequency of Failed Login Attempts" (idx 25): 3
+    - "SSH Port Targeting Behavior" (idx 26): 7
+    - "Use of Default or Weak Passwords (e.g., “123456”, “admin”)" (idx 27): 0
+    - "Reuse of Precompiled Username/Password Lists" (idx 28): 1
+    - "Session-Based Packet Aggregation for Flow Analysis" (idx 29): 9
+    - "TCP Flag Patterns in Failed SSH Connections" (idx 30): 9
+    - "Detection via Flow-Level Features (not full packet inspection)" (idx 31): 7
+    - "Port Scanning Patterns in Brute Force Attempts" (idx 32): 7
+    - "Source Port Behavior in BFA Traffic" (idx 33): 6
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions" (idx 34): 9
+    - "Brute Force Activity on Non-Standard SSH Ports" (idx 35): 7
+    - "Packet Burst Patterns in Attack Windows" (idx 36): 9
+    - "Session Timing and Connection Persistence Heuristics" (idx 37): 7
+    - "Distribution of Attacks Across Multiple IPs (Distributed BFA)" (idx 38): 5
+    - "Attackers Targeting Professional Servers Over Workstations" (idx 39): 1
+    - "Nonlinear Relationship Between Packet Count and Payload Size" (idx 40): 9
+    - "Flow Repetition with Minor Variation in Credentials" (idx 41): 4
+    - "TCP SYN/ACK Exchange Completion in Failed Logins" (idx 42): 9
+    - "Feature Overfitting Risks When Using Port Numbers" (idx 43): 7
+    - "Categorical Port-Based Tree Splitting Leading to Over-Specialization" (idx 44): 3
+
+  Top 10 Concepts by Raw Score (with their Binned Scores):
+    - "Nonlinear Relationship Between Packet Count and Payload Size": 9 (Raw Sim: 0.4923)
+    - "TCP SYN/ACK Exchange Completion in Failed Logins": 9 (Raw Sim: 0.4919)
+    - "TCP Flag Patterns in Failed SSH Connections": 9 (Raw Sim: 0.4863)
+    - "Packet Burst Patterns in Attack Windows": 9 (Raw Sim: 0.4773)
+    - "Session-Based Packet Aggregation for Flow Analysis": 9 (Raw Sim: 0.4563)
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions": 9 (Raw Sim: 0.4512)
+    - "Flow-based Network Traffic Features": 8 (Raw Sim: 0.4305)
+    - "Detection via Flow-Level Features (not full packet inspection)": 7 (Raw Sim: 0.4197)
+    - "Port Scanning Patterns in Brute Force Attempts": 7 (Raw Sim: 0.4187)
+    - "Brute Force Activity on Non-Standard SSH Ports": 7 (Raw Sim: 0.4088)
+
+File: packet_patator-multi-cloud-benign2-113166_benign.txt
+  Binned Concept Scores (Concept Index: Bin Index):
+    - "Password Authentication Weakness" (idx 0): 0
+    - "Pre-compiled Username/Password Dictionaries" (idx 1): 0
+    - "Dictionary-based Attack Automation" (idx 2): 1
+    - "SSH Brute Force Patterns" (idx 3): 4
+    - "IP Address-based Attack Correlation" (idx 4): 6
+    - "Account Lockout Mechanisms" (idx 5): 1
+    - "Webcam and Biometric Authentication" (idx 6): 1
+    - "Honeypot-based Attack Observation" (idx 7): 3
+    - "Username/Password Pair Reuse" (idx 8): 2
+    - "Distributed Brute-force Attacks" (idx 9): 3
+    - "Slow-motion Brute-force Strategies" (idx 10): 1
+    - "Flow-based Network Traffic Features" (idx 11): 6
+    - "MQTT Protocol Vulnerability" (idx 12): 5
+    - "Deep Learning for Traffic Classification" (idx 13): 2
+    - "MobileNet-based CNN Detection Model" (idx 14): 0
+    - "Transfer Learning for Intrusion Detection" (idx 15): 2
+    - "Bi-flow and Uni-flow Feature Engineering" (idx 16): 0
+    - "Edge and Fog Computing for IDS" (idx 17): 0
+    - "Context-aware Detection Strategies" (idx 18): 1
+    - "Attack Dictionary Signature Matching" (idx 19): 3
+    - "Resource Constraints in IoT Devices" (idx 20): 2
+    - "False Positives and Detection Precision" (idx 21): 3
+    - "Adversarial Evasion Techniques" (idx 22): 1
+    - "Dynamic Device Configuration Adaptation" (idx 23): 4
+    - "IP Blocking and Alerting Response Mechanisms" (idx 24): 7
+    - "High Frequency of Failed Login Attempts" (idx 25): 4
+    - "SSH Port Targeting Behavior" (idx 26): 7
+    - "Use of Default or Weak Passwords (e.g., “123456”, “admin”)" (idx 27): 0
+    - "Reuse of Precompiled Username/Password Lists" (idx 28): 0
+    - "Session-Based Packet Aggregation for Flow Analysis" (idx 29): 7
+    - "TCP Flag Patterns in Failed SSH Connections" (idx 30): 9
+    - "Detection via Flow-Level Features (not full packet inspection)" (idx 31): 5
+    - "Port Scanning Patterns in Brute Force Attempts" (idx 32): 6
+    - "Source Port Behavior in BFA Traffic" (idx 33): 7
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions" (idx 34): 7
+    - "Brute Force Activity on Non-Standard SSH Ports" (idx 35): 6
+    - "Packet Burst Patterns in Attack Windows" (idx 36): 8
+    - "Session Timing and Connection Persistence Heuristics" (idx 37): 8
+    - "Distribution of Attacks Across Multiple IPs (Distributed BFA)" (idx 38): 4
+    - "Attackers Targeting Professional Servers Over Workstations" (idx 39): 1
+    - "Nonlinear Relationship Between Packet Count and Payload Size" (idx 40): 8
+    - "Flow Repetition with Minor Variation in Credentials" (idx 41): 1
+    - "TCP SYN/ACK Exchange Completion in Failed Logins" (idx 42): 9
+    - "Feature Overfitting Risks When Using Port Numbers" (idx 43): 6
+    - "Categorical Port-Based Tree Splitting Leading to Over-Specialization" (idx 44): 2
+
+  Top 10 Concepts by Raw Score (with their Binned Scores):
+    - "TCP SYN/ACK Exchange Completion in Failed Logins": 9 (Raw Sim: 0.5350)
+    - "TCP Flag Patterns in Failed SSH Connections": 9 (Raw Sim: 0.4875)
+    - "Nonlinear Relationship Between Packet Count and Payload Size": 8 (Raw Sim: 0.4365)
+    - "Packet Burst Patterns in Attack Windows": 8 (Raw Sim: 0.4284)
+    - "Session Timing and Connection Persistence Heuristics": 8 (Raw Sim: 0.4247)
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions": 7 (Raw Sim: 0.4141)
+    - "IP Blocking and Alerting Response Mechanisms": 7 (Raw Sim: 0.4101)
+    - "Session-Based Packet Aggregation for Flow Analysis": 7 (Raw Sim: 0.4072)
+    - "SSH Port Targeting Behavior": 7 (Raw Sim: 0.4027)
+    - "Source Port Behavior in BFA Traffic": 7 (Raw Sim: 0.4011)
+
+File: packet_patator-multi-cloud-benign2-200496_benign.txt
+  Binned Concept Scores (Concept Index: Bin Index):
+    - "Password Authentication Weakness" (idx 0): 7
+    - "Pre-compiled Username/Password Dictionaries" (idx 1): 3
+    - "Dictionary-based Attack Automation" (idx 2): 4
+    - "SSH Brute Force Patterns" (idx 3): 9
+    - "IP Address-based Attack Correlation" (idx 4): 8
+    - "Account Lockout Mechanisms" (idx 5): 6
+    - "Webcam and Biometric Authentication" (idx 6): 6
+    - "Honeypot-based Attack Observation" (idx 7): 5
+    - "Username/Password Pair Reuse" (idx 8): 6
+    - "Distributed Brute-force Attacks" (idx 9): 6
+    - "Slow-motion Brute-force Strategies" (idx 10): 3
+    - "Flow-based Network Traffic Features" (idx 11): 8
+    - "MQTT Protocol Vulnerability" (idx 12): 5
+    - "Deep Learning for Traffic Classification" (idx 13): 3
+    - "MobileNet-based CNN Detection Model" (idx 14): 0
+    - "Transfer Learning for Intrusion Detection" (idx 15): 5
+    - "Bi-flow and Uni-flow Feature Engineering" (idx 16): 0
+    - "Edge and Fog Computing for IDS" (idx 17): 3
+    - "Context-aware Detection Strategies" (idx 18): 2
+    - "Attack Dictionary Signature Matching" (idx 19): 7
+    - "Resource Constraints in IoT Devices" (idx 20): 1
+    - "False Positives and Detection Precision" (idx 21): 6
+    - "Adversarial Evasion Techniques" (idx 22): 4
+    - "Dynamic Device Configuration Adaptation" (idx 23): 3
+    - "IP Blocking and Alerting Response Mechanisms" (idx 24): 8
+    - "High Frequency of Failed Login Attempts" (idx 25): 9
+    - "SSH Port Targeting Behavior" (idx 26): 9
+    - "Use of Default or Weak Passwords (e.g., “123456”, “admin”)" (idx 27): 4
+    - "Reuse of Precompiled Username/Password Lists" (idx 28): 5
+    - "Session-Based Packet Aggregation for Flow Analysis" (idx 29): 9
+    - "TCP Flag Patterns in Failed SSH Connections" (idx 30): 9
+    - "Detection via Flow-Level Features (not full packet inspection)" (idx 31): 9
+    - "Port Scanning Patterns in Brute Force Attempts" (idx 32): 9
+    - "Source Port Behavior in BFA Traffic" (idx 33): 7
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions" (idx 34): 9
+    - "Brute Force Activity on Non-Standard SSH Ports" (idx 35): 9
+    - "Packet Burst Patterns in Attack Windows" (idx 36): 9
+    - "Session Timing and Connection Persistence Heuristics" (idx 37): 7
+    - "Distribution of Attacks Across Multiple IPs (Distributed BFA)" (idx 38): 6
+    - "Attackers Targeting Professional Servers Over Workstations" (idx 39): 5
+    - "Nonlinear Relationship Between Packet Count and Payload Size" (idx 40): 8
+    - "Flow Repetition with Minor Variation in Credentials" (idx 41): 6
+    - "TCP SYN/ACK Exchange Completion in Failed Logins" (idx 42): 9
+    - "Feature Overfitting Risks When Using Port Numbers" (idx 43): 8
+    - "Categorical Port-Based Tree Splitting Leading to Over-Specialization" (idx 44): 4
+
+  Top 10 Concepts by Raw Score (with their Binned Scores):
+    - "TCP SYN/ACK Exchange Completion in Failed Logins": 9 (Raw Sim: 0.5854)
+    - "TCP Flag Patterns in Failed SSH Connections": 9 (Raw Sim: 0.5610)
+    - "Brute Force Activity on Non-Standard SSH Ports": 9 (Raw Sim: 0.5146)
+    - "High Frequency of Failed Login Attempts": 9 (Raw Sim: 0.4871)
+    - "Duration and Byte-Count Anomalies in Brute Force Sessions": 9 (Raw Sim: 0.4684)
+    - "SSH Port Targeting Behavior": 9 (Raw Sim: 0.4631)
+    - "Detection via Flow-Level Features (not full packet inspection)": 9 (Raw Sim: 0.4606)
+    - "SSH Brute Force Patterns": 9 (Raw Sim: 0.4559)
+    - "Session-Based Packet Aggregation for Flow Analysis": 9 (Raw Sim: 0.4549)
+    - "Packet Burst Patterns in Attack Windows": 9 (Raw Sim: 0.4546)
