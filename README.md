@@ -125,6 +125,51 @@ The model is built on top of the netFound base model with multiple layers:
 3. **ConceptMapper**: Maps the pooled representations to concept scores
 4. **OutputHead**: Maps concept scores to final classification decisions
 
+## NetFound Finetuning Steps
+
+1. Clone the netfound repo from https://github.com/SNL-UCSB/netFound
+2. Create a separate netfound conda environment, and get huggingface access
+```bash
+conda create -n netfound python=3.11 -y
+conda activate netfound
+cd netFound
+pip install -r requirements.txt
+pip install huggingface-hub
+huggingface-cli login
+```
+3. Get PcapSplitter, PcapPlusPlus, and CMake environment ready
+```bash
+cd ../
+git clone git@github.com:seladb/PcapPlusPlus.git
+cd netFound
+export LD_LIBRARY_PATH="$CONDA_PREFIX/lib:$HOME/.local/lib:$LD_LIBRARY_PATH"
+export PcapPlusPlus_DIR="$HOME/.local/lib/cmake/PcapPlusPlus"
+export CMAKE_PREFIX_PATH="$CONDA_PREFIX:$CMAKE_PREFIX_PATH"
+export CMAKE_MODULE_PATH="$PWD/cmake:$CMAKE_MODULE_PATH"
+```
+
+4. Data Prepration: Suppose the required HTTP Bruteforce Detection data are already been placed under data/bruteforce/finetuning/raw/0 and /1
+Then run
+```bash
+python scripts/preprocess_data.py \
+  --input_folder data/bruteforce/finetuning \
+  --action finetune \
+  --tokenizer_config configs/HTTPBruteforceFinetuningConfig.json \
+  --combined
+```
+The above command is single thread execution. To make it faster, we can use
+```bash
+python scripts/smart_resume_label1.py   --input_folder data/bruteforce/finetuning   --tokenizer_config configs/HTTPBruteforceFinetuningConfig.json   --max_workers 8   --cores_per_worker 10   --batch_size 200   --combined
+```
+for preparing label 1 data. To prepare label 0 data, we can edit the smart_resume_label1.py's static variables.
+
+5. model training
+```bash
+bash ./scripts/training/finetune_bruteforce.sh
+```
+
+6. optional: upload the finetuned model to huggingface
+
 ## References
 
 - "Toward Trustworthy Learning-Enabled Systems with Concept-Based Explanations"
