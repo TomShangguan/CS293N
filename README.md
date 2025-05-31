@@ -127,7 +127,7 @@ The model is built on top of the netFound base model with multiple layers:
 
 ## NetFound Finetuning Steps
 
-1. Clone the netfound repo from https://github.com/SNL-UCSB/netFound
+1. Clone the netfound repo from https://github.com/SNL-UCSB/netFound, and then put the netfound_related_files folder content to the corresponding netfound folder.
 2. Create a separate netfound conda environment, and get huggingface access
 ```bash
 conda create -n netfound python=3.11 -y
